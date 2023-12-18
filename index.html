@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'accueil</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <!-- <nav id="mainNav" class="header__nav" x-show="menuIsOpen" x-transition.duration.800ms>
+            <ul class="header__nav-list">
+                <li class="menu__item"><a class="menu__link" href="#">Réplique</a></li>
+                <p class="header__nav-desc">La réplique du film</p>
+                <hr class="header__hr">
+                <li class="menu__item"><a class="menu__link" href="#">Films</a></li>
+                <p class="header__nav-desc">Le film Le Pianiste ainsi que les oeuvres corrélées</p>
+                <hr class="header__hr">
+                <li class="menu__item"><a class="menu__link" href="#">Réalisateur</a></li>
+                <p class="header__nav-desc">L'histoire de Roman Polanski</p>
+                <hr class="header__hr">
+                <li class="menu__item"><a class="menu__link" href="#">Musique</a></li>
+                <p class="header__nav-desc">Nocturne n'20 do dièse mineur</p>
+                <hr class="header__hr">
+                <li class="menu__item"><a class="menu__link" href="#">Livres</a></li>
+                <p class="header__nav-desc">Le livre Le Pianiste ainsi que les oeuvres corrélées</p>
+                <hr class="header__hr">
+            </ul>
+        </nav> -->
+
+        <a href="#" class="header__logo">
+            <img src="public/img/logo.png" alt="Tadao logo" class="header__logo-img" />
+        </a>
+
+        <button aria-controls="mainNav" class="header__menu-btn" @click="menuIsOpen = ! menuIsOpen">
+            <img src="public/img/menu-open.svg" alt="Icone menu" class="header__menu-icon" />
+        </button>
+
+    </header>
+
+    <main class="main">
+        <div class="main__hero">
+            <h1 class="main__hero-title">
+                Vous m'avez pris mon violon, vous m'avez pris mon âme
+            </h1>
+            <img class="main__hero-imgfond" src="public/img/fondpia.webp" alt="fond">
+            <a class="main__hero-scroll" href="#"><img src="public/img/arrow.svg" alt="flèche"></a>
+        </div>
+
+        <section>
+            <div class="main_oeuvre_card card">
+                <a href="#">
+                    <h2 class="card_title">Une réplique lourde de sens</h2>
+                    <hr>
+                    <figure class="card_figure"><img class="card_img" src="public/img/imgmain1.webp"
+                            alt="image oeuvre"></figure>
+                    <p class="main__section-text">Une phrase simple et profonde qui résume le film : la survie grâce à la musique face à la barbarie nazie.</p>
+                </a>
+                <button class="section__btn-abt">
+                    <a href="#">
+                        En savoir plus
+                    </a>
+                </button>
+            </div>
+
+            <div class="main_oeuvre_card card">
+                <a href="#">
+                    <h2 class="card_title">Un film culte</h2>
+                    <hr>
+                    <figure class="card_figure"><img class="card_img" src="public/img/imgmain2.webp" alt="image oeuvre"></figure>
+                    <p class="main__section-text">Le pianiste, un film bouleversant sur la musique et la guerre, adapté du livre de Wladyslaw Szpilman. D’autres films sur
+                    la Shoah à découvrir.</p>
+                </a>
+                <button class="section__btn-abt">
+                    <a href="#">
+                        En savoir plus
+                    </a>
+                </button>
+            </div>
+
+            <div class="main_oeuvre_card card">
+                <a href="#">
+                    <h2 class="card_title">Un réalisateur hors pair</h2>
+                    <hr>
+                    <figure class="card_figure"><img class="card_img" src="public/img/imgmain3.webp" alt="image oeuvre"></figure>
+                    <p class="main__section-text">Roman Polanski, un réalisateur franco-polonais, marqué par la persécution des Juifs pendant la guerre. Le pianiste, son
+                    film le plus intime.</p>
+                </a>
+                <button class="section__btn-abt">
+                    <a href="#">
+                        En savoir plus
+                    </a>
+                </button>
+            </div>
+
+            <div class="main_oeuvre_card card">
+                <a href="#">
+                    <h2 class="card_title">Une musique culte</h2>
+                    <hr>
+                    <figure class="card_figure"><img class="card_img" src="public/img/imgmain4.webp" alt="image oeuvre"></figure>
+                    <p class="main__section-text">La nocturne n°20 de Chopin, une musique sublime et émouvante, qui exprime l'espoir et la résistance du pianiste face à
+                    l'horreur.</p>
+                </a>
+                <button class="section__btn-abt">
+                    <a href="#">
+                        En savoir plus
+                    </a>
+                </button>
+            </div>
+
+            <div class="main_oeuvre_card card">
+                <a href="#">
+                    <h2 class="card_title">La version littéraire originale</h2>
+                    <hr>
+                    <figure class="card_figure"><img class="card_img" src="public/img/imgmain5.webp" alt="image oeuvre"></figure>
+                    <p class="main__section-text">Le livre Le pianiste, le témoignage de Wladyslaw Szpilman, qui raconte sa survie dans le ghetto de Varsovie. D’autres
+                    livres sur le même thème.</p>
+                </a>
+                <button class="section__btn-abt">
+                    <a href="#">
+                        En savoir plus
+                    </a>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__header">
+            <a class="footer__header-logo" href="#"><img src="public/img/logo.png" alt="logo site"></a>
+            <a class="footer__header-logo" href="https://butmmi.thomasjeu.fr/#/"><img src="public/img/mmi.png"
+                    alt="logo mmi"></a>
+        </div>
+        <div>
+            <p>Concept</p>
+            <p>Le site Le Pianiste constitue une rétrospective du célèbre film de Roman Polanski. Il aura pour but premier de faire
+            découvrir à son public une histoire vrai promulguant de fortes valeurs à travers un film, son réalisateur ainsi que
+            certaines oeuvres corrélées.</p>
+            <hr>
+        </div>
+        <div class="footer__list">
+            <ul class="footer__list2">
+                <p class="footer__title">Sections</p>
+                <li class="footer__li">Répliques</li>
+                <li class="footer__li">Films</li>
+                <li class="footer__li">Réalisateur</li>
+                <li class="footer__li">Musique</li>
+                <li class="footer__li">Livres</li>
+            </ul>
+            <ul class="footer__list2">
+                <p class="footer__title">Informations</p>
+                <li class="footer__li">Tadao Ando</li>
+                <li class="footer__li">Oeuvres architecturales</li>
+                <li class="footer__li">Contact</li>
+            </ul>
+            <ul class="footer__list1">
+                <p class="footer__title">Réseaux</p>
+                <li class="footer__li"><a href="#"><img src="public/img/facebook.svg" alt="logo réseau"></a></li>
+                <li class="footer__li"><a href="#"><img src="public/img/insta.svg" alt="logo réseau"></a></li>
+                <li class="footer__li"><a href="#"><img src="public/img/X.svg" alt="logo réseau"></a></li>
+            </ul>
+            <hr>
+        </div>
+        <div>
+            <p>“projet réalisé dans le cadre d'un exercice pédagogique au départe-ment MMi de
+            Montbéliard“</p>
+        </div>
+    </footer>
+</body>
+
+</html>
