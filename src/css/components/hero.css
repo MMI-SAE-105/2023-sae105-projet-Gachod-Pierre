@@ -1,0 +1,49 @@
+.main__hero-imgfond {
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    object-fit: cover;
+    top: 0;
+}
+
+.main__hero-title {
+    z-index: 1;
+    margin-left: var(--space4x);
+    font-style: italic;
+    margin-right: 120px;
+    margin-top: 52px;
+    margin-bottom: 320px;
+}
+
+.main__hero-title::before {
+    position: absolute;
+    left: 20px;
+    top: 40px;
+    content: url("../../../public/img/bef.svg");
+}
+
+.main__hero-title::after {
+    position: absolute;
+    right: 130px;
+    top: 150px;
+    content: url("../../../public/img/aft.svg");
+}
+
+.main__hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 110px;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.gold {
+    color: var(--gold);
+}
+
+.main__hero-scroll {
+    margin-top: 190px;
+}
