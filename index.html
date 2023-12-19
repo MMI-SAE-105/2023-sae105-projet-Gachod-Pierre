@@ -11,7 +11,29 @@
 
 <body>
     <header class="header">
-        <!-- <nav id="mainNav" class="header__nav" x-show="menuIsOpen" x-transition.duration.800ms>
+        <nav id="mainNav" class="header__nav" 
+        x-show="menuIsOpen" 
+        x-transition:enter="transition-transform origin-right ease-out duration-400"
+        x-transition:enter-start="transform translate-x-full"
+        x-transition:enter-end="transform translate-x-0"
+        x-transition:leave="transition-transform origin-left ease-in duration-400"
+        x-transition:leave-start="transform translate-x-0"
+        x-transition:leave-end="transform translate-x-full">
+            <div class="header__nav--menu">
+                <a href="#" class="header__logo">
+                    <img src="public/img/logo.png" alt="pianiste logo" class="header__logo-img" />
+                </a>
+                
+                <a href="#" class="header__lang">
+                    <img src="public/img/FR.svg" alt="bouton langue" class="header__logo-img" />
+                </a>
+                
+                <button aria-controls="mainNav" class="header__menu-btn" @click="menuIsOpen = ! menuIsOpen">
+                    <img src="public/img/menu-open.svg" alt="Icone menu" class="header__menu-icon" />
+                </button>
+            </div>
+            
+
             <ul class="header__nav-list">
                 <li class="menu__item"><a class="menu__link" href="#">Réplique</a></li>
                 <p class="header__nav-desc">La réplique du film</p>
@@ -27,9 +49,22 @@
                 <hr class="header__hr">
                 <li class="menu__item"><a class="menu__link" href="#">Livres</a></li>
                 <p class="header__nav-desc">Le livre Le Pianiste ainsi que les oeuvres corrélées</p>
-                <hr class="header__hr">
+                <hr class="header__hr--end">
             </ul>
-        </nav> -->
+
+            <ul class="header__nav-info">
+                <a href="#">
+                    <li>Contact</li>
+                </a>
+                <a href="#">
+                    <li>à propos</li>
+                </a>
+                <a href="#">
+                    <li>Autres projets</li>
+                </a>
+            </ul>
+
+        </nav>
 
         <a href="#" class="header__logo">
             <img src="public/img/logo.png" alt="Tadao logo" class="header__logo-img" />
