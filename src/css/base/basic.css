@@ -19,12 +19,6 @@ a {
     color: var(--gris6);
 }
 
-
-.logo__pia {
-    width: 33.3%;
-    height: auto;
-}
-
 ul {
     list-style: none;
     margin: 0;
