@@ -11,7 +11,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 26px
+    padding-top: 30px;
 }
 
 .header__menu-icon {
@@ -23,7 +23,7 @@ header {
 }
 
 .header__lang {
-    padding-left: 50px;
+    padding-left: 30px;
     padding-top: 5px;
 }
 
@@ -32,9 +32,8 @@ header {
     position: fixed;
     inset: 0;
     background-color: black;
-    display: grid;
     z-index: 9;
-    padding: 20px;
+    padding: var(--space2-5x);
 }
 
 .menu__link {
@@ -58,25 +57,25 @@ header {
 
 .header__nav-list {
     margin-right: 70px;
+    margin-top: 50px;
+    margin-bottom: 0;
 }
 
 .header__hr {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .header__hr--end {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     border-color: var(--dark-red);
 }
 
 .header__nav-info {
     display: flex;
-    justify-content: space-between;
-    margin-right: auto;
-    margin-left: auto;
-    
+    justify-content: center;
+    margin-top: 70px;
 }
 
 .header__nav-info a {

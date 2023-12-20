@@ -10,22 +10,20 @@
     z-index: 1;
     margin-left: var(--space4x);
     font-style: italic;
-    margin-right: 115px;
+    margin-right: 112px;
     margin-top: 52px;
     margin-bottom: 320px;
 }
 
 .main__hero-title::before {
-    position: absolute;
-    left: 20px;
-    top: 40px;
+    position: relative;
+    top: -20px;
     content: url("../../../public/img/bef.svg");
 }
 
 .main__hero-title::after {
-    position: absolute;
-    right: 130px;
-    top: 150px;
+    position: relative;
+    top: -20px;
     content: url("../../../public/img/aft.svg");
 }
 
@@ -45,5 +43,5 @@
 }
 
 .main__hero-scroll {
-    margin-top: 190px;
+    margin-top: 110px;
 }

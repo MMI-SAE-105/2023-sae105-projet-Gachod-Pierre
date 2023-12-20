@@ -20,6 +20,10 @@ a {
 }
 
 
+.logo__pia {
+    width: 33.3%;
+    height: auto;
+}
 
 ul {
     list-style: none;
