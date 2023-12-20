@@ -91,7 +91,7 @@ main {
     border-radius: 50px;
 }
 
-button a {
+form button {
     font-family: Mulish;
     font-size: 18px;
     font-weight: 700;

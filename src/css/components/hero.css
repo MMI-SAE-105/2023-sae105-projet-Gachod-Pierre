@@ -17,13 +17,13 @@
 
 .main__hero-title::before {
     position: relative;
-    top: -20px;
+    top: -15px;
     content: url("../../../public/img/bef.svg");
 }
 
 .main__hero-title::after {
     position: relative;
-    top: -20px;
+    top: -15px;
     content: url("../../../public/img/aft.svg");
 }
 
