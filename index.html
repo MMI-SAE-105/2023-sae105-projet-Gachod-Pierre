@@ -9,7 +9,7 @@
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
 </head>
 
-<body>
+<body class="body__land">
     <header class="header">
         <nav id="mainNav" class="header__nav" 
         x-show="menuIsOpen" x-transition.scale.origin.top>
@@ -65,13 +65,20 @@
     </header>
 
     <main class="main">
-        <div class="main__hero">
-            <h1 class="main__hero-title">
-                Vous m'avez pris mon <span class="gold">violon</span>, vous m'avez pris mon <span class="gold">âme</span>
-            </h1>
-            <img class="main__hero-imgfond" src="public/img/fondpia.webp" alt="fond">
-            <a class="main__hero-scroll" href="#"><img src="public/img/arrow.svg" alt="flèche"></a>
-        </div>
+
+        <section class="section">
+            <div class="main__hero">
+                <div class="text__content">
+                    <h1 class="main__hero-title--land">
+                        Vous m'avez <br> pris mon <span class="gold">violon</span>, <br> vous m'avez <br> pris mon <span
+                            class="gold">âme</span>
+                    </h1>
+                </div>
+                <img class="main__hero-imgfond" src="public/img/fondpia.webp" alt="fond">
+                <a class="main__hero-scroll" href="#"><img src="public/img/arrow.svg" alt="flèche"></a>
+            </div>
+        </section>
+    
 
         <section class="section">
             <div>
@@ -82,7 +89,7 @@
             </div>
             <div class="section__card">
                 <a href="#">
-                    <h2 class="card_title">Une réplique lourde de sens</h2>
+                    <h2 class="card__title">Une réplique lourde de sens</h2>
                     <hr class="card__sep">
                     <figure class="card__figure"><img class="card__img" src="public/img/imgmain1.webp"
                             alt="image oeuvre"></figure>
@@ -93,7 +100,7 @@
 
             <div class="section__card">
                 <a href="#">
-                    <h2 class="card_title">Un film culte</h2>
+                    <h2 class="card__title">Un film culte</h2>
                     <hr class="card__sep">
                     <figure class="card__figure"><img class="card__img" src="public/img/imgmain2.webp" alt="image oeuvre"></figure>
                     <p class="main__section-text">Le pianiste, un film bouleversant sur la musique et la guerre, adapté du livre de Wladyslaw Szpilman. D’autres films sur
@@ -104,7 +111,7 @@
 
             <div class="section__card">
                 <a href="#">
-                    <h2 class="card_title">Un réalisateur hors pair</h2>
+                    <h2 class="card__title">Un réalisateur hors pair</h2>
                     <hr class="card__sep">
                     <figure class="card__figure"><img class="card__img" src="public/img/imgmain3.webp" alt="image oeuvre"></figure>
                     <p class="main__section-text">Roman Polanski, un réalisateur franco-polonais, marqué par la persécution des Juifs pendant la guerre. Le pianiste, son
@@ -115,7 +122,7 @@
 
             <div class="section__card">
                 <a href="#">
-                    <h2 class="card_title">Une musique culte</h2>
+                    <h2 class="card__title">Une musique culte</h2>
                     <hr class="card__sep">
                     <figure class="card__figure"><img class="card__img" src="public/img/imgmain4.webp" alt="image oeuvre"></figure>
                     <p class="main__section-text">La nocturne n°20 de Chopin, une musique sublime et émouvante, qui exprime l'espoir et la résistance du pianiste face à
@@ -126,7 +133,7 @@
 
             <div class="section__card">
                 <a href="#">
-                    <h2 class="card_title">La version littéraire originale</h2>
+                    <h2 class="card__title">La version littéraire originale</h2>
                     <hr class="card__sep">
                     <figure class="card__figure"><img class="card__img" src="public/img/imgmain5.webp" alt="image oeuvre"></figure>
                     <p class="main__section-text">Le livre Le pianiste, le témoignage de Wladyslaw Szpilman, qui raconte sa survie dans le ghetto de Varsovie. D’autres
@@ -174,7 +181,7 @@
         </div>
         <div>
             <hr class="footer__sep">
-            <p>“projet réalisé dans le cadre d'un exercice pédagogique au départe-ment MMi de
+            <p class="footer__disc">“projet réalisé dans le cadre d'un exercice pédagogique au départe-ment MMi de
             Montbéliard“</p>
         </div>
     </footer>
