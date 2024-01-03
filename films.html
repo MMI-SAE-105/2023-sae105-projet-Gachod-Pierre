@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Films</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+</head>
+
+<body :class="{ 'noscroll': displayedImage !== null }" x-data="{
+                displayedImage: null,
+                displayedFigcap: null,
+                isEnlarged: false,
+            }">
+    <header class="header">
+        <nav id="mainNav" class="header__nav" x-show="menuIsOpen" x-transition.scale.origin.top>
+            <div class="header__nav--menu">
+                <a href="#" class="header__logo">
+                    <img src="public/img/logo.png" alt="pianiste logo" class="logo__pia" />
+                </a>
+
+                <a href="#" class="header__lang">
+                    <img src="public/img/FR.svg" alt="bouton langue" class="sigle__lang" />
+                </a>
+
+                <button aria-controls="mainNav" class="header__menu-btn" @click="menuIsOpen = ! menuIsOpen">
+                    <img src="public/img/menu-open.svg" alt="Icone menu" class="header__menu-icon" />
+                </button>
+            </div>
+
+
+            <ul class="header__nav-list">
+                <li class="menu__item"><a class="menu__link" href="#">Réplique</a></li>
+                <li>
+                    <p class="header__nav-desc">La réplique du film</p>
+                </li>
+                <li>
+                    <hr class="header__hr">
+                </li>
+                <li class="menu__item"><a class="menu__link" href="#">Films</a></li>
+                <li>
+                    <p class="header__nav-desc">Le film Le Pianiste ainsi que les oeuvres corrélées</p>
+                </li>
+                <li>
+                    <hr class="header__hr">
+                </li>
+                <li class="menu__item"><a class="menu__link" href="#">Réalisateur</a></li>
+                <li>
+                    <p class="header__nav-desc">L'histoire de Roman Polanski</p>
+                </li>
+                <li>
+                    <hr class="header__hr">
+                </li>
+                <li class="menu__item"><a class="menu__link" href="#">Musique</a></li>
+                <li>
+                    <p class="header__nav-desc">Nocturne n'20 do dièse mineur</p>
+                </li>
+                <li>
+                    <hr class="header__hr">
+                </li>
+                <li class="menu__item"><a class="menu__link" href="#">Livres</a></li>
+                <li>
+                    <p class="header__nav-desc">Le livre Le Pianiste ainsi que les oeuvres corrélées</p>
+                </li>
+                <li>
+                    <hr class="header__hr--end">
+                </li>
+            </ul>
+
+            <ul class="header__nav-info">
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">à propos</a></li>
+                <li><a href="#">Autres projets</a></li>
+            </ul>
+
+        </nav>
+
+        <a href="#" class="header__logo">
+            <img src="public/img/logo.png" alt="pianiste logo" class="logo__pia" />
+        </a>
+
+        <button aria-controls="mainNav" class="header__menu-btn" @click="menuIsOpen = ! menuIsOpen">
+            <img src="public/img/menu-open.svg" alt="Icone menu" class="header__menu-icon" />
+        </button>
+
+    </header>
+
+    <main class="main">
+        <section class="section">
+            <div class="main__hero">
+                <div class="text__content">
+                    <h1 class="main__hero-title">
+                        Films et oeuvres corrélées
+                    </h1>
+                    <hr class="hero__title--sep">
+                    <p class="main__hero--desc">Le pianiste, un film bouleversant sur la musique et la guerre, adapté du livre de Wladyslaw Szpilman.
+                        D'autres films
+                        sur la Shoah à découvrir.</p>
+                </div>
+                <img class="main__hero-imgfond" src="public/img/fondfi.webp" alt="fond">
+                <form class="read__but" action="#"><button class="section__btn-read">Lire</button></form>
+            </div>
+        </section>
+
+        <section class="section">
+            <article class="article">
+                <div class="section__article">
+                    <h2 class="article__title">Le Pianiste, un film culte</h2>
+                    <hr class="article__sep">
+                    <p class="main__article-text">Le Pianiste est un film réalisé par Roman Polanski, sorti en 2002. Il s’agit d’une adaptation du roman autobiographique
+                    éponyme de Władysław Szpilman, un pianiste juif polonais qui a survécu à l’occupation nazie de Varsovie pendant la
+                    Seconde Guerre mondiale. Le film retrace son parcours depuis l’invasion de la Pologne en 1939 jusqu’à la libération de
+                    la ville en 1945, en passant par son enfermement dans le ghetto, son évasion, sa clandestinité et sa rencontre avec un
+                    officier allemand mélomane qui lui sauve la vie.</p>
+                    <figure class="article__figure"><img class="article__img" src="public/img/filmpia.webp" alt="image film"></figure>
+                </div>
+            </article>
+            <article class="article">
+                <div class="section__article">
+                    <h2 class="article__title">Un film salué par la critique</h2>
+                    <hr class="article__sep">
+                    <p class="main__article-text">Le film a été salué par la critique et le public pour sa mise en scène sobre et réaliste, sa reconstitution historique
+                    minutieuse, sa musique poignante et l’interprétation magistrale d’Adrien Brody dans le rôle principal. Le Pianiste a
+                    remporté de nombreux prix prestigieux, dont la Palme d’or au Festival de Cannes, trois Oscars (meilleur réalisateur,
+                    meilleur acteur et meilleure adaptation), sept César (dont meilleur film, meilleur réalisateur et meilleur acteur) et
+                    deux BAFTA (meilleur film et meilleur réalisateur).</p>
+                    <figure class="article__figure"><img class="article__img" src="public/img/adrienbrody.webp" alt="image adrien brody">
+                    </figure>
+                </div>
+            </article>
+        </section>
+        <section class="section">
+            <article class="article">
+                <div class="section__article">
+                    <h2 class="article__title">Autres oeuvres cinématographiques abordant les thèmes musiques et guerre</h2>
+                    <hr class="article__sep">
+                </div>
+                <div class="galerie">
+                    <div class="overlay" x-show="displayedImage" @click="displayedImage=null"
+                        @keyup.escape.window="displayedImage = null">
+                        <figure>
+                            <img :src="displayedImage" alt="image affichée">
+                            <figcaption x-text="displayedFigcap"></figcaption>
+                        </figure>
+                    </div>
+                    <div class="miniatures">
+                        <img src="public/img/lavieestbellecar1.webp" alt="minia" 
+                            @click="displayedImage = 'public/img/lavieestbellecar1.webp'; displayedFigcap = 'La vie est belle (1997)'">
+                    </div>
+                    <div class="miniatures">
+                        <img src="public/img/listeschindlercar2.webp" alt="minia"
+                            @click="displayedImage = 'public/img/listeschindlercar2.webp'; displayedFigcap = 'La liste de Schindler (1993)'">
+                    </div>
+                    <div class="miniatures">
+                        <img src="public/img/symphoniecar3.webp" alt="minia"
+                            @click="displayedImage = 'public/img/symphoniecar3.webp'; displayedFigcap = 'Symphonie du nouveau monde (1993)'">
+                    </div>
+                    <div class="miniatures">
+                        <img src="public/img/goodmorningcar4.webp" alt="minia"
+                            @click="displayedImage = 'public/img/goodmorningcar4.webp'; displayedFigcap = 'Good morning Vietnam (1987)'">
+                    </div>
+                    <div class="miniatures">
+                        <img src="public/img/haircar5.webp" alt="minia"
+                            @click="displayedImage = 'public/img/haircar5.webp'; displayedFigcap = 'Hair (1979)'">
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__header">
+            <a class="footer__logo" href="#"><img class="logo__pia" src="public/img/logo.webp" alt="logo site"></a>
+            <a class="footer__logo" href="https://butmmi.thomasjeu.fr/#/"><img class="logo__mmi" src="public/img/mmi.webp"
+                    alt="logo mmi"></a>
+        </div>
+        <div>
+            <p class="footer__title">Concept</p>
+            <p class="footer__desc">Le site Le Pianiste constitue une rétrospective du célèbre film de Roman Polanski. Il
+                aura pour but premier de faire
+                découvrir à son public une histoire vrai promulguant de fortes valeurs à travers un film, son réalisateur
+                ainsi que
+                certaines oeuvres corrélées.</p>
+            <hr class="footer__sep">
+        </div>
+        <div class="footer__container">
+            <ul class="footer__list">
+                <li class="footer__li">
+                    <p class="footer__title">Sections</p>
+                </li>
+                <li class="footer__li">Répliques</li>
+                <li class="footer__li">Films</li>
+                <li class="footer__li">Réalisateur</li>
+                <li class="footer__li">Musique</li>
+                <li class="footer__li">Livres</li>
+            </ul>
+            <ul class="footer__list">
+                <li class="footer__li">
+                    <p class="footer__title">Informations</p>
+                </li>
+                <li class="footer__li">Contact</li>
+                <li class="footer__li">à propos</li>
+                <li class="footer__li">Autres projets</li>
+            </ul>
+            <ul class="footer__list--reseaux">
+                <li class="footer__li">
+                    <p class="footer__title">Réseaux</p>
+                </li>
+                <li class="footer__li--icone"><a class="footer__icone" href="#"><img src="public/img/facebook.svg"
+                            alt="logo réseau"></a></li>
+                <li class="footer__li--icone"><a class="footer__icone" href="#"><img src="public/img/insta.svg"
+                            alt="logo réseau"></a></li>
+                <li class="footer__li--icone"><a class="footer__icone" href="#"><img src="public/img/X.svg"
+                            alt="logo réseau"></a></li>
+            </ul>
+        </div>
+        <div>
+            <hr class="footer__sep">
+            <p class="footer__disc">“projet réalisé dans le cadre d'un exercice pédagogique au départe-ment MMi de
+                Montbéliard“</p>
+        </div>
+    </footer>
+</body>
+
+</html>
