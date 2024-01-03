@@ -33,6 +33,15 @@ footer {
     line-height: 160%;
     letter-spacing: 3%;
     margin-top: 0;
+    color: var(--gris6);
+}
+
+.footer__desc {
+    color: var(--gris6);
+}
+
+.footer__disc {
+    color: var(--gris6);
 }
 
 

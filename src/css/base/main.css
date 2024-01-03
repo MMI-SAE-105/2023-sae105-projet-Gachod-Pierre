@@ -6,4 +6,5 @@
 
 .section__desc {
     margin-bottom: 80px;
+    color: var(--gris6);
 }

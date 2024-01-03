@@ -1,0 +1,71 @@
+.galerie {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 10px;
+    text-align: center;
+    padding-bottom: 50px;
+    margin-top: 50px;
+}
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    cursor: pointer;
+    display: grid;
+    place-content: center;
+}
+
+.overlay::after {
+    content: "X";
+    color: #fff;
+    background-color: #000;
+    font-family: sans-serif;
+    text-align: center;
+    line-height: 2rem;
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+.overlay>figure {
+    margin: 0;
+    padding: 1rem;
+}
+
+.overlay>figure>img {
+    max-width: 100%;
+    height: auto;
+}
+
+.miniatures__figure {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.miniatures img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    width: 186px;
+    height: 245px;
+}
+
+figcaption {
+    font-family: Jost;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: var(--gris6);
+    text-align: left;
+}

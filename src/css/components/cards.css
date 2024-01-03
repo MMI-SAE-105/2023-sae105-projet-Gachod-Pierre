@@ -18,3 +18,11 @@
     height: auto;
     margin: 0;
 }
+
+.card__title {
+    color: var(--gris6);
+}
+
+.main__section-text {
+    color: var(--gris6);
+}

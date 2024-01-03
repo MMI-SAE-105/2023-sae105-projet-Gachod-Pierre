@@ -6,36 +6,48 @@
     top: 0;
 }
 
-.main__hero-title {
-    z-index: 1;
-    margin-left: var(--space4x);
+.main__hero-title--land {
     font-style: italic;
-    margin-right: 112px;
-    margin-top: 52px;
-    margin-bottom: 320px;
+    z-index: 1;
+    position: relative;
+    margin-bottom: 0;
+    color: var(--gris6);
 }
 
-.main__hero-title::before {
+.main__hero-title {
+    z-index: 1;
+    position: relative;
+    margin-bottom: 0;
+    color: var(--gris6);
+}
+
+.main__hero--desc {
+    color: var(--gris6);
+}
+
+.main__hero-title--land::before {
     position: relative;
     top: -15px;
     content: url("../../../public/img/bef.svg");
 }
 
-.main__hero-title::after {
+
+.main__hero-title--land::after {
     position: relative;
     top: -15px;
     content: url("../../../public/img/aft.svg");
 }
 
 .main__hero {
+    z-index: -1;
     display: flex;
     flex-direction: column;
-    align-items: center;
     overflow: hidden;
     position: relative;
-    padding-bottom: 110px;
+    padding-bottom: 78px;
     margin-left: -16px;
     margin-right: -16px;
+    background-color: var(--gris1);
 }
 
 .gold {
@@ -43,5 +55,19 @@
 }
 
 .main__hero-scroll {
-    margin-top: 110px;
+    display: flex;
+    margin-top: 420px;
+    justify-content: center;
+}
+
+.text__content {
+    max-width: 100%;
+    margin: var(--space3x);
+}
+
+.hero__title--sep {
+    border-color: var(--gold);
+    margin-top: 5px;
+    margin-bottom: 354px;
+    margin-right: 60px;
 }
