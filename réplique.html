@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réplique</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav id="mainNav" class="header__nav" x-show="menuIsOpen" x-transition.scale.origin.top>
+            <div class="header__nav--menu">
+                <a href="#" class="header__logo">
+                    <img src="public/img/logo.png" alt="pianiste logo" class="logo__pia" />
+                </a>
+
+                <a href="#" class="header__lang">
+                    <img src="public/img/FR.svg" alt="bouton langue" class="sigle__lang" />
+                </a>
+
+                <button aria-controls="mainNav" class="header__menu-btn" @click="menuIsOpen = ! menuIsOpen">
+                    <img src="public/img/menu-open.svg" alt="Icone menu" class="header__menu-icon" />
+                </button>
+            </div>
+
+
+            <ul class="header__nav-list">
+                <li class="menu__item"><a class="menu__link" href="#">Réplique</a></li>
+                <li>
+                    <p class="header__nav-desc">La réplique du film</p>
+                </li>
+                <li>
+                    <hr class="header__hr">
+                </li>
+                <li class="menu__item"><a class="menu__link" href="#">Films</a></li>
+                <li>
+                    <p class="header__nav-desc">Le film Le Pianiste ainsi que les oeuvres corrélées</p>
+                </li>
+                <li>
+                    <hr class="header__hr">
+                </li>
+                <li class="menu__item"><a class="menu__link" href="#">Réalisateur</a></li>
+                <li>
+                    <p class="header__nav-desc">L'histoire de Roman Polanski</p>
+                </li>
+                <li>
+                    <hr class="header__hr">
+                </li>
+                <li class="menu__item"><a class="menu__link" href="#">Musique</a></li>
+                <li>
+                    <p class="header__nav-desc">Nocturne n'20 do dièse mineur</p>
+                </li>
+                <li>
+                    <hr class="header__hr">
+                </li>
+                <li class="menu__item"><a class="menu__link" href="#">Livres</a></li>
+                <li>
+                    <p class="header__nav-desc">Le livre Le Pianiste ainsi que les oeuvres corrélées</p>
+                </li>
+                <li>
+                    <hr class="header__hr--end">
+                </li>
+            </ul>
+
+            <ul class="header__nav-info">
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">à propos</a></li>
+                <li><a href="#">Autres projets</a></li>
+            </ul>
+
+        </nav>
+
+        <a href="#" class="header__logo">
+            <img src="public/img/logo.png" alt="pianiste logo" class="logo__pia" />
+        </a>
+
+        <button aria-controls="mainNav" class="header__menu-btn" @click="menuIsOpen = ! menuIsOpen">
+            <img src="public/img/menu-open.svg" alt="Icone menu" class="header__menu-icon" />
+        </button>
+
+    </header>
+
+    <main class="main">
+        <section class="section">
+            <div class="main__hero">
+                <div class="text__content">
+                    <h1 class="main__hero-title">
+                        La célébre réplique du film
+                    </h1>
+                    <hr class="hero__title--sep">
+                    <p class="main__hero--desc">Une phrase simple et profonde qui résume le film : la survie grâce à la musique face à la barbarie nazie. Découvrez cette phrase lourde de valeur et de sens.</p>
+                </div>
+                <img class="main__hero-imgfond" src="public/img/fondrep.webp" alt="fond">
+                <form class="read__but" action="#"><button class="section__btn-read">Lire</button></form>
+            </div>
+        </section>
+
+        <section class="section">
+            <article class="article">
+                <div class="section__article">
+                    <h2 class="article__title">La réplique du film : “vous m’avez pris mon violon, vous m’avez pris mon âme”</h2>
+                    <hr class="article__sep">
+                    <p class="main__article-text">Parmi les scènes les plus marquantes du film Le Pianiste, il y a celle où à la fin du film, un Polonais s'exclame à tout
+                    un groupe de soldats nazis prisonniers : « Vous m’avez tout pris. Moi, un musicien. Vous avez pris mon violon, vous avez
+                    pris mon âme ». Cette phrase riche de sens et de valeurs présente l’importance de la musique chez l’humain.</p>
+                    <figure class="article__figure"><img class="article__img" src="public/img/imgrep1.webp" alt="image réa"></figure>
+                    <figcaption class="main_figcap">"scène du polonais cherchant le pianiste" <strong>extrait du film</strong></figcaption>
+                </div>
+            </article>
+            <article class="article">
+                <div class="section__article">
+                    <h2 class="article__title">La musique se posant en vecteur valeur humanisante</h2>
+                    <hr class="article__sep">
+                    <p class="main__article-text">Dans une autre scène du film, Szpilman le personnage principal du film, joue du piano dans une maison abandonnée où il
+                    se cache. Il est découvert par un officier allemand, Wilm Hosenfeld, qui lui demande de jouer pour lui. Szpilman
+                    interprète alors Nocturne n°20 en ut dièse mineur de Chopin, une pièce mélancolique et poignante. Hosenfeld, touché par
+                    la musique et par le talent du pianiste, décide de l’aider à survivre en lui apportant de la nourriture et en lui
+                    trouvant un autre abri. Il lui dit : “je ne sais pas comment vous remercier”. Szpilman répond : “merci à vous”.</p>
+                    <video controls src="public/video/le_pianiste.mp4" type="video/mp4"></video>
+                    <p class="main__article-text">Cette scène montre comment la musique peut créer un lien entre deux êtres humains que tout oppose à première vue, mais
+                    qui finalement restent des humains sensibles à certaines choses pouvant faire preuve d’empathie et de générosité. Pour
+                    en savoir plus sur la musique du Film, <a href="#"><strong>cliquez ici</strong></a></p>
+                </div>
+            </article>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__header">
+            <a class="footer__logo" href="#"><img class="logo__pia" src="public/img/logo.webp" alt="logo site"></a>
+            <a class="footer__logo" href="https://butmmi.thomasjeu.fr/#/"><img class="logo__mmi" src="public/img/mmi.webp"
+                    alt="logo mmi"></a>
+        </div>
+        <div>
+            <p class="footer__title">Concept</p>
+            <p class="footer__desc">Le site Le Pianiste constitue une rétrospective du célèbre film de Roman Polanski. Il
+                aura pour but premier de faire
+                découvrir à son public une histoire vrai promulguant de fortes valeurs à travers un film, son réalisateur
+                ainsi que
+                certaines oeuvres corrélées.</p>
+            <hr class="footer__sep">
+        </div>
+        <div class="footer__container">
+            <ul class="footer__list">
+                <li class="footer__li">
+                    <p class="footer__title">Sections</p>
+                </li>
+                <li class="footer__li">Répliques</li>
+                <li class="footer__li">Films</li>
+                <li class="footer__li">Réalisateur</li>
+                <li class="footer__li">Musique</li>
+                <li class="footer__li">Livres</li>
+            </ul>
+            <ul class="footer__list">
+                <li class="footer__li">
+                    <p class="footer__title">Informations</p>
+                </li>
+                <li class="footer__li">Contact</li>
+                <li class="footer__li">à propos</li>
+                <li class="footer__li">Autres projets</li>
+            </ul>
+            <ul class="footer__list--reseaux">
+                <li class="footer__li">
+                    <p class="footer__title">Réseaux</p>
+                </li>
+                <li class="footer__li--icone"><a class="footer__icone" href="#"><img src="public/img/facebook.svg"
+                            alt="logo réseau"></a></li>
+                <li class="footer__li--icone"><a class="footer__icone" href="#"><img src="public/img/insta.svg"
+                            alt="logo réseau"></a></li>
+                <li class="footer__li--icone"><a class="footer__icone" href="#"><img src="public/img/X.svg"
+                            alt="logo réseau"></a></li>
+            </ul>
+        </div>
+        <div>
+            <hr class="footer__sep">
+            <p class="footer__disc">“projet réalisé dans le cadre d'un exercice pédagogique au départe-ment MMi de
+                Montbéliard“</p>
+        </div>
+    </footer>
+</body>
+
+</html>
