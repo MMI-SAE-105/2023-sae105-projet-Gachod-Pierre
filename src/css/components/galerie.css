@@ -60,12 +60,12 @@
     height: 245px;
 }
 
-figcaption {
+.galerie_figcap {
     font-family: Jost;
     font-size: 16px;
     font-weight: 400;
     line-height: 150%;
     letter-spacing: 0%;
     color: var(--gris6);
-    text-align: left;
+    text-align: center;
 }
