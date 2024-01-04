@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livres</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav id="mainNav" class="header__nav" x-show="menuIsOpen" x-transition.scale.origin.top>
+            <div class="header__nav--menu">
+                <a href="#" class="header__logo">
+                    <img src="public/img/logo.png" alt="pianiste logo" class="logo__pia" />
+                </a>
+
+                <a href="#" class="header__lang">
+                    <img src="public/img/FR.svg" alt="bouton langue" class="sigle__lang" />
+                </a>
+
+                <button aria-controls="mainNav" class="header__menu-btn" @click="menuIsOpen = ! menuIsOpen">
+                    <img src="public/img/menu-open.svg" alt="Icone menu" class="header__menu-icon" />
+                </button>
+            </div>
+
+
+            <ul class="header__nav-list">
+                <li class="menu__item"><a class="menu__link" href="#">Réplique</a></li>
+                <li>
+                    <p class="header__nav-desc">La réplique du film</p>
+                </li>
+                <li>
+                    <hr class="header__hr">
+                </li>
+                <li class="menu__item"><a class="menu__link" href="#">Films</a></li>
+                <li>
+                    <p class="header__nav-desc">Le film Le Pianiste ainsi que les oeuvres corrélées</p>
+                </li>
+                <li>
+                    <hr class="header__hr">
+                </li>
+                <li class="menu__item"><a class="menu__link" href="#">Réalisateur</a></li>
+                <li>
+                    <p class="header__nav-desc">L'histoire de Roman Polanski</p>
+                </li>
+                <li>
+                    <hr class="header__hr">
+                </li>
+                <li class="menu__item"><a class="menu__link" href="#">Musique</a></li>
+                <li>
+                    <p class="header__nav-desc">Nocturne n'20 do dièse mineur</p>
+                </li>
+                <li>
+                    <hr class="header__hr">
+                </li>
+                <li class="menu__item"><a class="menu__link" href="#">Livres</a></li>
+                <li>
+                    <p class="header__nav-desc">Le livre Le Pianiste ainsi que les oeuvres corrélées</p>
+                </li>
+                <li>
+                    <hr class="header__hr--end">
+                </li>
+            </ul>
+
+            <ul class="header__nav-info">
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">à propos</a></li>
+                <li><a href="#">Autres projets</a></li>
+            </ul>
+
+        </nav>
+
+        <a href="#" class="header__logo">
+            <img src="public/img/logo.png" alt="pianiste logo" class="logo__pia" />
+        </a>
+
+        <button aria-controls="mainNav" class="header__menu-btn" @click="menuIsOpen = ! menuIsOpen">
+            <img src="public/img/menu-open.svg" alt="Icone menu" class="header__menu-icon" />
+        </button>
+
+    </header>
+
+    <main class="main">
+        <section class="section">
+            <div class="main__hero">
+                <div class="text__content">
+                    <h1 class="main__hero-title">
+                        La version littéraire du film
+                    </h1>
+                    <hr class="hero__title--sep">
+                    <p class="main__hero--desc">Le livre Le pianiste, le témoignage de Wladyslaw Szpilman, qui raconte sa survie dans le ghetto de Varsovie. D’autres
+                    livres sur le même thème.</p>
+                </div>
+                <img class="main__hero-imgfond" src="public/img/fondmu.webp" alt="fond">
+                <form class="read__but" action="#"><button class="section__btn-read">Lire</button></form>
+            </div>
+        </section>
+
+        <section class="section">
+            <article class="article">
+                <div class="section__article">
+                    <h2 class="article__title">Une oeuvre littéraire</h2>
+                    <hr class="article__sep">
+                    <p class="main__article-text">À l’origine Le Pianiste est un récit autobiographique de Władysław Szpilman, un pianiste et compositeur polonais de
+                    confession juive, qui raconte comment il a survécu à l’occupation nazie de Varsovie et au génocide des Juifs. Publié
+                    pour la première fois en 1946, le livre a connu un succès mondial grâce à son adaptation cinématographique par Roman
+                    Polanski en 2002. Le film a remporté trois Oscars, dont celui du meilleur réalisateur et du meilleur acteur pour Adrien
+                    Brody, qui incarne Szpilman à l’écran.</p> 
+                    <figure class="article__figure">
+                        <img class="article__img" src="public/img/livre.webp" alt="image livre">
+                    </figure>
+                    <p class="main__article-text">Le livre et le film présentent quelques différences dans le récit des événements vécus par Szpilman. Par exemple, le
+                    film montre Szpilman jouant du piano dans une maison abandonnée, où il est découvert par un officier allemand, Wilm
+                    Hosenfeld, qui lui vient en aide. Dans le livre, Szpilman ne joue pas du piano à ce moment-là, mais il est surpris par
+                    Hosenfeld en cherchant de la nourriture. Le film omet également certains épisodes du livre, comme la tentative de
+                    suicide de Szpilman après avoir été séparé de sa famille, ou son amitié avec un autre juif caché, Majorek.</p>
+                    <figure class="article__figure">
+                        <img class="article__img" src="public/img/szpilman.webp" alt="image livre">
+                        <figcaption>"scène du pianiste interprétant la Nocturne n°4" <strong>extrait du film</strong></figcaption>
+                    </figure>
+                </div>
+            </article>
+            <article class="article">
+                <div class="section__article">
+                    <h2 class="article__title">Oeuvres associées</h2>
+                    <hr class="article__sep">
+                    <p class="main__article-text">Le livre de Szpilman n’est pas le seul témoignage littéraire sur la Shoah et le ghetto de Varsovie. Parmi les autres
+                    livres qui abordent ce sujet, on peut citer :</p>
+                    <div class="carrousel" x-data="{hrefCourant:'#ecran-1',}">
+                        <!-- <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant" @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth"><</button>
+                                    <button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant" @click="$refs.parent.scrollLeft += $refs.parent.clientWidth">></button> -->
+                        <div class="carrousel_parent-ecrans" x-ref="parent" @scroll.debounce.0ms.passive="
+                                                hrefCourant = '#'+
+                                                                    [...$refs.parent.children]
+                                                                    .find(e=>e.getBoundingClientRect().x>=0)
+                                                                    .id">
+                            <div id="ecran-1" class="carrousel_ecran">
+                                <figure>
+                                    <img class="imgcar" src="public/img/maus.webp" alt="image ecran 1">
+                                    <figcaption class="carrousel_figcap">"Maus" <strong>1930</strong></figcaption>
+                                </figure>
+                            </div>
+                            <div id="ecran-2" class="carrousel_ecran">
+                                <figure>
+                                    <img class="imgcar" src="public/img/Sierakowiak.webp" alt="image ecran 2">
+                                    <figcaption class="carrousel_figcap">"Journal de David Sierakowiak" <strong>1939</strong></figcaption>
+                                </figure>
+                            </div>
+                            <div id="ecran-3" class="carrousel_ecran">
+                                <figure>
+                                    <img class="imgcar" src="public/img/Anne_Franck.webp" alt="image ecran 3">
+                                    <figcaption class="carrousel_figcap">"Le journal d'Anne Franck" <strong>1942</strong></figcaption>
+                                </figure>
+                            </div>
+                            <div id="ecran-4" class="carrousel_ecran">
+                                <figure>
+                                    <img class="imgcar" src="public/img/si_c'est_un_homme.webp" alt="image ecran 4">
+                                    <figcaption class="carrousel_figcap">"Si c'est un homme" <strong>1947</strong></figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+            
+                </div>
+                <p class="main__article-text">Ces livres sont des témoignages poignants et indispensables pour comprendre l’horreur de la Shoah et la résistance des
+                victimes. Ils sont aussi des œuvres littéraires de grande qualité, qui touchent le lecteur par leur style et leur
+                sensibilité.</p>
+            </article>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__header">
+            <a class="footer__logo" href="#"><img class="logo__pia" src="public/img/logo.webp" alt="logo site"></a>
+            <a class="footer__logo" href="https://butmmi.thomasjeu.fr/#/"><img class="logo__mmi" src="public/img/mmi.webp"
+                    alt="logo mmi"></a>
+        </div>
+        <div>
+            <p class="footer__title">Concept</p>
+            <p class="footer__desc">Le site Le Pianiste constitue une rétrospective du célèbre film de Roman Polanski. Il
+                aura pour but premier de faire
+                découvrir à son public une histoire vrai promulguant de fortes valeurs à travers un film, son réalisateur
+                ainsi que
+                certaines oeuvres corrélées.</p>
+            <hr class="footer__sep">
+        </div>
+        <div class="footer__container">
+            <ul class="footer__list">
+                <li class="footer__li">
+                    <p class="footer__title">Sections</p>
+                </li>
+                <li class="footer__li">Répliques</li>
+                <li class="footer__li">Films</li>
+                <li class="footer__li">Réalisateur</li>
+                <li class="footer__li">Musique</li>
+                <li class="footer__li">Livres</li>
+            </ul>
+            <ul class="footer__list">
+                <li class="footer__li">
+                    <p class="footer__title">Informations</p>
+                </li>
+                <li class="footer__li">Contact</li>
+                <li class="footer__li">à propos</li>
+                <li class="footer__li">Autres projets</li>
+            </ul>
+            <ul class="footer__list--reseaux">
+                <li class="footer__li">
+                    <p class="footer__title">Réseaux</p>
+                </li>
+                <li class="footer__li--icone"><a class="footer__icone" href="#"><img src="public/img/facebook.svg"
+                            alt="logo réseau"></a></li>
+                <li class="footer__li--icone"><a class="footer__icone" href="#"><img src="public/img/insta.svg"
+                            alt="logo réseau"></a></li>
+                <li class="footer__li--icone"><a class="footer__icone" href="#"><img src="public/img/X.svg"
+                            alt="logo réseau"></a></li>
+            </ul>
+        </div>
+        <div>
+            <hr class="footer__sep">
+            <p class="footer__disc">“projet réalisé dans le cadre d'un exercice pédagogique au départe-ment MMi de
+                Montbéliard“</p>
+        </div>
+    </footer>
+</body>
+
+</html>
