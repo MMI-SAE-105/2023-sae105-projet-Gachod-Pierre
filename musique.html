@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musique</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav id="mainNav" class="header__nav" x-show="menuIsOpen" x-transition.scale.origin.top>
+            <div class="header__nav--menu">
+                <a href="#" class="header__logo">
+                    <img src="public/img/logo.png" alt="pianiste logo" class="logo__pia" />
+                </a>
+
+                <a href="#" class="header__lang">
+                    <img src="public/img/FR.svg" alt="bouton langue" class="sigle__lang" />
+                </a>
+
+                <button aria-controls="mainNav" class="header__menu-btn" @click="menuIsOpen = ! menuIsOpen">
+                    <img src="public/img/menu-open.svg" alt="Icone menu" class="header__menu-icon" />
+                </button>
+            </div>
+
+
+            <ul class="header__nav-list">
+                <li class="menu__item"><a class="menu__link" href="#">Réplique</a></li>
+                <li>
+                    <p class="header__nav-desc">La réplique du film</p>
+                </li>
+                <li>
+                    <hr class="header__hr">
+                </li>
+                <li class="menu__item"><a class="menu__link" href="#">Films</a></li>
+                <li>
+                    <p class="header__nav-desc">Le film Le Pianiste ainsi que les oeuvres corrélées</p>
+                </li>
+                <li>
+                    <hr class="header__hr">
+                </li>
+                <li class="menu__item"><a class="menu__link" href="#">Réalisateur</a></li>
+                <li>
+                    <p class="header__nav-desc">L'histoire de Roman Polanski</p>
+                </li>
+                <li>
+                    <hr class="header__hr">
+                </li>
+                <li class="menu__item"><a class="menu__link" href="#">Musique</a></li>
+                <li>
+                    <p class="header__nav-desc">Nocturne n'20 do dièse mineur</p>
+                </li>
+                <li>
+                    <hr class="header__hr">
+                </li>
+                <li class="menu__item"><a class="menu__link" href="#">Livres</a></li>
+                <li>
+                    <p class="header__nav-desc">Le livre Le Pianiste ainsi que les oeuvres corrélées</p>
+                </li>
+                <li>
+                    <hr class="header__hr--end">
+                </li>
+            </ul>
+
+            <ul class="header__nav-info">
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">à propos</a></li>
+                <li><a href="#">Autres projets</a></li>
+            </ul>
+
+        </nav>
+
+        <a href="#" class="header__logo">
+            <img src="public/img/logo.png" alt="pianiste logo" class="logo__pia" />
+        </a>
+
+        <button aria-controls="mainNav" class="header__menu-btn" @click="menuIsOpen = ! menuIsOpen">
+            <img src="public/img/menu-open.svg" alt="Icone menu" class="header__menu-icon" />
+        </button>
+
+    </header>
+
+    <main class="main">
+        <section class="section">
+            <div class="main__hero">
+                <div class="text__content">
+                    <h1 class="main__hero-title">
+                        La célébre musique du film
+                    </h1>
+                    <hr class="hero__title--sep">
+                    <p class="main__hero--desc">La nocturne n°20 de Chopin, une musique sublime et émouvante, qui exprime l’espoir et la résistance du pianiste face à
+                    l’horreur.</p>
+                </div>
+                <img class="main__hero-imgfond" src="public/img/fondmu.webp" alt="fond">
+                <form class="read__but" action="#"><button class="section__btn-read">Lire</button></form>
+            </div>
+        </section>
+
+        <section class="section">
+            <article class="article">
+                <div class="section__article">
+                    <h2 class="article__title">Le pianiste et la musique</h2>
+                    <hr class="article__sep">
+                    <p class="main__article-text">Le film Le Pianiste met en scène la passion et le talent de Władysław Szpilman, un pianiste juif polonais qui survit à
+                    l’horreur du ghetto de Varsovie et de l’occupation nazie pendant la Seconde Guerre mondiale. La musique joue un rôle
+                    essentiel dans le film, non seulement comme expression artistique, mais aussi comme symbole de résistance, d’espoir et
+                    d’humanité.
+                    <br><br>Parmi les œuvres musicales interprétées par Szpilman dans le film, l’une des plus marquantes est le
+                    Nocturne n°20 en ut dièse mineur, opus posthume, de Frédéric Chopin. Ce morceau, composé en 1830, est dédié à la sœur
+                    aînée de Chopin, Ludwika, comme un exercice avant de commencer l’étude de son second concerto. Il n’a été publié qu’en
+                    1870, soit 21 ans après la mort du compositeur.</p>
+                    <figure class="article__figure">
+                        <audio controls src="public/audio/nocturne_lepianiste.mp3"></audio>
+                        <figcaption>Frédéric Chopin Nocturne in C sharp minor B 49 1830</figcaption>
+                    </figure>
+                    <p class="main__article-text">Le Nocturne n°20 est une pièce pour piano solo d’une grande beauté et d’une grande expressivité. Il se caractérise par
+                    un tempo lent (lento con gran espressione), une mélodie mélancolique et chantante à la main droite, et des arpèges
+                    harmonieux à la main gauche. Il comporte deux parties contrastées : la première, en ut dièse mineur, est douce et
+                    plaintive ; la seconde, en ré bémol majeur, est plus lumineuse et apaisante. La pièce se termine par un retour à la
+                    première partie, suivie d’une coda en ut dièse majeur.
+                    <br><br>Celle-ci apparaît à deux moments clés du film. Le premier est au début, lorsque Szpilman joue ce morceau à la radio
+                    polonaise, alors que les bombes allemandes s’abattent sur Varsovie. C’est la dernière émission de la radio avant sa
+                    destruction. Le second est à la fin, lorsque Szpilman joue ce morceau devant un officier allemand, Wilm Hosenfeld, qui
+                    le découvre dans une maison en ruine. Cet officier, touché par la musique et par le sort du pianiste, va lui venir en
+                    aide et lui sauver la vie.</p>
+                    <figure class="article__figure">
+                        <img class="article__img" src="public/img/imgmu1.webp" alt="image musique">
+                        <figcaption>"scène du pianiste interprétant la Nocturne n°4" <strong>extrait du film</strong></figcaption>
+                    </figure>
+                    <p>Le Nocturne n°20 est donc un lien entre le début et la fin du film, entre la vie et la mort, entre la guerre et la paix.
+                    Il illustre le pouvoir de la musique comme langage universel, capable de transcender les frontières, les conflits et les
+                    souffrances.
+                    <br><br>Si vous souhaitez écouter le Nocturne n°20 dans son intégralité, vous pouvez cliquer sur le lien suivant : <a href="https://www.youtube.com/watch?v=AA7auh7DLp0"><strong>Nocturne n°20 en ut dièse mineur.</strong></a>
+                    <br><br>Si vous souhaitez en savoir plus sur la vie et l’œuvre de Chopin, vous pouvez consulter les articles suivants : <a href="https://www.youtube.com/watch?v=sdFDRdhlsPI"><strong>Frédéric
+                    Chopin</strong></a> et <a href="https://www.youtube.com/watch?v=AmmYQjBxwVY"><strong>Nocturnes (Chopin).</strong></a>
+                    <br><br>Si vous souhaitez découvrir d’autres œuvres musicales présentes dans le film Le Pianiste, vous pouvez consulter la liste
+                    suivante : <a href="https://fr.wikipedia.org/wiki/Nocturne_no_20_de_Chopin"><strong>Musique du film Le Pianiste.</strong></a></p>
+                </div>
+            </article>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__header">
+            <a class="footer__logo" href="#"><img class="logo__pia" src="public/img/logo.webp" alt="logo site"></a>
+            <a class="footer__logo" href="https://butmmi.thomasjeu.fr/#/"><img class="logo__mmi" src="public/img/mmi.webp"
+                    alt="logo mmi"></a>
+        </div>
+        <div>
+            <p class="footer__title">Concept</p>
+            <p class="footer__desc">Le site Le Pianiste constitue une rétrospective du célèbre film de Roman Polanski. Il
+                aura pour but premier de faire
+                découvrir à son public une histoire vrai promulguant de fortes valeurs à travers un film, son réalisateur
+                ainsi que
+                certaines oeuvres corrélées.</p>
+            <hr class="footer__sep">
+        </div>
+        <div class="footer__container">
+            <ul class="footer__list">
+                <li class="footer__li">
+                    <p class="footer__title">Sections</p>
+                </li>
+                <li class="footer__li">Répliques</li>
+                <li class="footer__li">Films</li>
+                <li class="footer__li">Réalisateur</li>
+                <li class="footer__li">Musique</li>
+                <li class="footer__li">Livres</li>
+            </ul>
+            <ul class="footer__list">
+                <li class="footer__li">
+                    <p class="footer__title">Informations</p>
+                </li>
+                <li class="footer__li">Contact</li>
+                <li class="footer__li">à propos</li>
+                <li class="footer__li">Autres projets</li>
+            </ul>
+            <ul class="footer__list--reseaux">
+                <li class="footer__li">
+                    <p class="footer__title">Réseaux</p>
+                </li>
+                <li class="footer__li--icone"><a class="footer__icone" href="#"><img src="public/img/facebook.svg"
+                            alt="logo réseau"></a></li>
+                <li class="footer__li--icone"><a class="footer__icone" href="#"><img src="public/img/insta.svg"
+                            alt="logo réseau"></a></li>
+                <li class="footer__li--icone"><a class="footer__icone" href="#"><img src="public/img/X.svg"
+                            alt="logo réseau"></a></li>
+            </ul>
+        </div>
+        <div>
+            <hr class="footer__sep">
+            <p class="footer__disc">“projet réalisé dans le cadre d'un exercice pédagogique au départe-ment MMi de
+                Montbéliard“</p>
+        </div>
+    </footer>
+</body>
+
+</html>
