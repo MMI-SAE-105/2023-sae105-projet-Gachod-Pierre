@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos</title>
+    <link rel="stylesheet" href="../src/css/styles.css">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+</head>
+
+<body class="body2">
+    <header class="header">
+        <nav id="mainNav" class="header__nav" x-show="menuIsOpen" x-transition.scale.origin.top>
+            <div class="header__nav--menu">
+                <a href="#" class="header__logo">
+                    <img src="../public/img/logo.png" alt="pianiste logo" class="logo__pia" />
+                </a>
+
+                <a href="#" class="header__lang">
+                    <img src="../public/img/FR.svg" alt="bouton langue" class="sigle__lang" />
+                </a>
+
+                <button aria-controls="mainNav" class="header__menu-btn" @click="menuIsOpen = ! menuIsOpen">
+                    <img src="../public/img/menu-open.svg" alt="Icone menu" class="header__menu-icon" />
+                </button>
+            </div>
+
+
+            <ul class="header__nav-list">
+                <li class="menu__item"><a class="menu__link" href="#">Réplique</a></li>
+                <li>
+                    <p class="header__nav-desc">La réplique du film</p>
+                </li>
+                <li>
+                    <hr class="header__hr">
+                </li>
+                <li class="menu__item"><a class="menu__link" href="#">Films</a></li>
+                <li>
+                    <p class="header__nav-desc">Le film Le Pianiste ainsi que les oeuvres corrélées</p>
+                </li>
+                <li>
+                    <hr class="header__hr">
+                </li>
+                <li class="menu__item"><a class="menu__link" href="#">Réalisateur</a></li>
+                <li>
+                    <p class="header__nav-desc">L'histoire de Roman Polanski</p>
+                </li>
+                <li>
+                    <hr class="header__hr">
+                </li>
+                <li class="menu__item"><a class="menu__link" href="#">Musique</a></li>
+                <li>
+                    <p class="header__nav-desc">Nocturne n'20 do dièse mineur</p>
+                </li>
+                <li>
+                    <hr class="header__hr">
+                </li>
+                <li class="menu__item"><a class="menu__link" href="#">Livres</a></li>
+                <li>
+                    <p class="header__nav-desc">Le livre Le Pianiste ainsi que les oeuvres corrélées</p>
+                </li>
+                <li>
+                    <hr class="header__hr--end">
+                </li>
+            </ul>
+
+            <ul class="header__nav-info">
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">à propos</a></li>
+                <li><a href="#">Autres projets</a></li>
+            </ul>
+
+        </nav>
+
+        <a href="#" class="header__logo">
+            <img src="../public/img/logo.png" alt="pianiste logo" class="logo__pia" />
+        </a>
+
+        <button aria-controls="mainNav" class="header__menu-btn" @click="menuIsOpen = ! menuIsOpen">
+            <img src="../public/img/menu-open.svg" alt="Icone menu" class="header__menu-icon" />
+        </button>
+
+    </header>
+
+    <main class="main">
+        <section class="section">
+            <div class="main__hero">
+                <div class="text__content">
+                    <h1 class="main__hero-title">
+                        À propos
+                    </h1>
+                    <hr class="hero__title--sep2">
+                    <p class="main__hero--desc2">Salut je suis Pierre Gachod, étudiant en première année de BUT dans les métiers du multimédia et d’internet à
+                    Montbéliard. Les professeurs de MMI ont lancé un appel de projet dont le sujet était le suivant : « Réplique ». Nôtre
+                    but était de trouver une réplique associée à son film et d’en faire un site internet. Ce site est donc dédié au film Le
+                    Pianiste, réalisé par Roman Polanski et sorti en 2002.</p>
+                </div>
+                <img class="main__hero-imgfond" src="../public/img/avatar.webp" alt="fond">
+            </div>
+        </section>
+        <section class="section">
+            <p class="main__section-text">Etant passionné de cinéma et de musique j’ai été touché par le film Le Pianiste. J’ai donc voulu partager mon admiration
+            pour cette œuvre. J’ai donc essayé de créer un site moderne et attrayant, qui respecte les normes d’accessibilité,
+            d’ergonomie et d’écologie. J’ai également bénéficié de l’aide d’un assistant virtuel intelligent qui a pu me fournir des
+            informations pertinentes et des conseils utiles pour rédiger mon contenu.
+            <br><br>Le but de ce site est donc de faire découvrir ou redécouvrir ce film exceptionnel, qui raconte l’histoire vraie de
+            Władysław Szpilman, un pianiste juif polonais qui survit à l’occupation nazie de Varsovie pendant la Seconde Guerre
+            mondiale. Le film est une œuvre bouleversante qui montre la barbarie de la guerre, mais aussi la force de l’art et de la
+            musique.
+            <br><br>Le site propose plusieurs pages qui explorent les différentes facettes du film, comme la réplique du film, la
+            présentation du film et des films liés au thème de la Shoah, le réalisateur Roman Polanski, la musique nocturne 4 en mi
+            mineur de Frédéric Chopin, et le livre Le Pianiste dont le film est adapté.
+            <br><br>La visite de ce site vous procurera de nombreuses émotions, à l’image du film. Ce site se veut également être une source
+            d’informations afin de potentiellement donner envie au visiteur de regarder le film, ou de le revoir, en lui montrant sa
+            richesse et sa profondeur.
+            <br><br>Nous vous souhaitons une bonne visite sur ce site, et nous espérons que vous apprécierez le film Le Pianiste autant que
+            nous. N’hésitez pas à nous contacter si vous avez des questions ou des suggestions. Merci de votre intérêt.</p>
+        </section>
+        <section class="section">
+            <div class="section__article">
+                <h2 class="article__title2">Glossaire</h2>
+                <hr class="article__sep">
+                <ul class="article__ul">
+                    <li class="article__li"><p class="article__li--text">*<strong class="article__li--title">Shoah</strong>: La Shoah est l’extermination de 6 millions de Juifs par les nazis pendant la Seconde Guerre mondiale.</p></li>
+                    <li class="article__li"><p class="article__li--text">*<strong class="article__li--title">Rafles de Varsovie</strong>: opération nazie d’extermination des Juifs du ghetto en 1943.</p></li>
+                    <li class="article__li"><p class="article__li--text">*<strong class="article__li--title">Réplique</strong>: Une phrase prononcée par un personnage dans un film, une pièce de théâtre ou un livre.</p></li>
+                    <li class="article__li"><p class="article__li--text">*<strong class="article__li--title">Éponyme</strong>: Qui porte le même nom que quelque chose ou quelqu’un d’autre. Par exemple, le film Le Pianiste est éponyme du roman
+                    deSzpilman.</p></li>
+                    <li class="article__li"><p class="article__li--text">*<strong class="article__li--title">Mélomane</strong>: Qui aime beaucoup la musique et qui s’y connaît. Par exemple, l’officier allemand Hosenfeld est mélomane car il
+                    apprécie le talent de Szpilman.</p></li>
+                    <li class="article__li"><p class="article__li--text">*<strong class="article__li--title">Secte</strong>: Un groupe religieux ou idéologique qui se distingue des religions établies et qui exerce une forte influence sur ses
+                    adeptes, souvent au détriment de leur liberté ou de leur bien-être.</p></li>
+                    <li class="article__li"><p class="article__li--text">*<strong class="article__li--title">Arpège</strong>: Une succession de notes jouées l’une après l’autre sur un instrument à cordes ou à clavier, formant un accord.</p></li>
+                    <li class="article__li"><p class="article__li--text">*<strong class="article__li--title">Coda</strong>: Une partie finale d’une pièce musicale, qui sert à conclure le morceau.</p></li>
+                    <li class="article__li"><p class="article__li--text">*<strong class="article__li--title">Génocide</strong>: Un crime contre l’humanité qui consiste à exterminer intentionnellement et systématiquement un groupe ethnique,
+                    religieux ou politique.</p></li>
+                    <li class="article__li"><p class="article__li--text">*<strong class="article__li--title">Typhus</strong>: Une maladie infectieuse causée par des bactéries transmises par des poux ou des puces, qui provoque de la fièvre, des
+                    maux de tête et des éruptions cutanées.</p></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__header">
+            <a class="footer__logo" href="#"><img class="logo__pia" src="../public/img/logo.webp" alt="logo site"></a>
+            <a class="footer__logo" href="https://butmmi.thomasjeu.fr/#/"><img class="logo__mmi" src="../public/img/mmi.webp"
+                    alt="logo mmi"></a>
+        </div>
+        <div>
+            <p class="footer__title">Concept</p>
+            <p class="footer__desc">Le site Le Pianiste constitue une rétrospective du célèbre film de Roman Polanski. Il
+                aura pour but premier de faire
+                découvrir à son ../public une histoire vrai promulguant de fortes valeurs à travers un film, son réalisateur
+                ainsi que
+                certaines oeuvres corrélées.</p>
+            <hr class="footer__sep">
+        </div>
+        <div class="footer__container">
+            <ul class="footer__list">
+                <li class="footer__li">
+                    <p class="footer__title">Sections</p>
+                </li>
+                <li class="footer__li">Répliques</li>
+                <li class="footer__li">Films</li>
+                <li class="footer__li">Réalisateur</li>
+                <li class="footer__li">Musique</li>
+                <li class="footer__li">Livres</li>
+            </ul>
+            <ul class="footer__list">
+                <li class="footer__li">
+                    <p class="footer__title">Informations</p>
+                </li>
+                <li class="footer__li">Contact</li>
+                <li class="footer__li">à propos</li>
+                <li class="footer__li">Autres projets</li>
+            </ul>
+            <ul class="footer__list--reseaux">
+                <li class="footer__li">
+                    <p class="footer__title">Réseaux</p>
+                </li>
+                <li class="footer__li--icone"><a class="footer__icone" href="#"><img src="../public/img/facebook.svg"
+                            alt="logo réseau"></a></li>
+                <li class="footer__li--icone"><a class="footer__icone" href="#"><img src="../public/img/insta.svg"
+                            alt="logo réseau"></a></li>
+                <li class="footer__li--icone"><a class="footer__icone" href="#"><img src="../public/img/X.svg"
+                            alt="logo réseau"></a></li>
+            </ul>
+        </div>
+        <div>
+            <hr class="footer__sep">
+            <p class="footer__disc">“projet réalisé dans le cadre d'un exercice pédagogique au départe-ment MMi de
+                Montbéliard“</p>
+        </div>
+    </footer>
+</body>
+
+</html>
