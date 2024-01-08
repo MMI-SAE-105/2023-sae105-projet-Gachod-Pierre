@@ -25,6 +25,11 @@
     color: var(--gris6);
 }
 
+.main__hero--desc2 {
+    color: var(--gris6);
+    margin-bottom: 330px;
+}
+
 .main__hero-title--land::before {
     position: relative;
     top: -15px;
@@ -69,5 +74,12 @@
     border-color: var(--gold);
     margin-top: 5px;
     margin-bottom: 354px;
+    margin-right: 60px;
+}
+
+.hero__title--sep2 {
+    border-color: var(--gold);
+    margin-top: 5px;
+    margin-bottom: 10px;
     margin-right: 60px;
 }

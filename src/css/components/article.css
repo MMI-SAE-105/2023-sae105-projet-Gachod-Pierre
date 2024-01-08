@@ -14,3 +14,33 @@
 .article {
 margin: 60px 0;
 }
+
+.article__title2 {
+    color: var(--gris6);
+}
+
+.article__li {
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 170%;
+    letter-spacing: 0%;
+}
+
+.article__li--title{
+   text-decoration: underline;
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 170%;
+    letter-spacing: 0%;
+}
+
+.article__li--text {
+    color: var(--gris6);
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 200;
+    line-height: 150%;
+    letter-spacing: 0%;
+}
