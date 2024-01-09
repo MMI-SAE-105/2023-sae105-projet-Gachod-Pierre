@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autres projets</title>
+    <link rel="stylesheet" href="../src/css/styles.css">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+</head>
+
+<body class="body2">
+    <header class="header">
+        <nav id="mainNav" class="header__nav" x-show="menuIsOpen" x-transition.scale.origin.top>
+            <div class="header__nav--menu">
+                <a href="#" class="header__logo">
+                    <img src="../public/img/logo.png" alt="pianiste logo" class="logo__pia" />
+                </a>
+
+                <a href="#" class="header__lang">
+                    <img src="../public/img/FR.svg" alt="bouton langue" class="sigle__lang" />
+                </a>
+
+                <button aria-controls="mainNav" class="header__menu-btn" @click="menuIsOpen = ! menuIsOpen">
+                    <img src="../public/img/menu-open.svg" alt="Icone menu" class="header__menu-icon" />
+                </button>
+            </div>
+
+
+            <ul class="header__nav-list">
+                <li class="menu__item"><a class="menu__link" href="#">Réplique</a></li>
+                <li>
+                    <p class="header__nav-desc">La réplique du film</p>
+                </li>
+                <li>
+                    <hr class="header__hr">
+                </li>
+                <li class="menu__item"><a class="menu__link" href="#">Films</a></li>
+                <li>
+                    <p class="header__nav-desc">Le film Le Pianiste ainsi que les oeuvres corrélées</p>
+                </li>
+                <li>
+                    <hr class="header__hr">
+                </li>
+                <li class="menu__item"><a class="menu__link" href="#">Réalisateur</a></li>
+                <li>
+                    <p class="header__nav-desc">L'histoire de Roman Polanski</p>
+                </li>
+                <li>
+                    <hr class="header__hr">
+                </li>
+                <li class="menu__item"><a class="menu__link" href="#">Musique</a></li>
+                <li>
+                    <p class="header__nav-desc">Nocturne n'20 do dièse mineur</p>
+                </li>
+                <li>
+                    <hr class="header__hr">
+                </li>
+                <li class="menu__item"><a class="menu__link" href="#">Livres</a></li>
+                <li>
+                    <p class="header__nav-desc">Le livre Le Pianiste ainsi que les oeuvres corrélées</p>
+                </li>
+                <li>
+                    <hr class="header__hr--end">
+                </li>
+            </ul>
+
+            <ul class="header__nav-info">
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">à propos</a></li>
+                <li><a href="#">Autres projets</a></li>
+            </ul>
+
+        </nav>
+
+        <a href="#" class="header__logo">
+            <img src="../public/img/logo.png" alt="pianiste logo" class="logo__pia" />
+        </a>
+
+        <button aria-controls="mainNav" class="header__menu-btn" @click="menuIsOpen = ! menuIsOpen">
+            <img src="../public/img/menu-open.svg" alt="Icone menu" class="header__menu-icon" />
+        </button>
+
+    </header>
+
+    <main class="main">
+        <section class="section">
+            <div class="main__hero">
+                <div class="text__content">
+                    <h1 class="main__hero-title">
+                        Autres projets
+                    </h1>
+                    <hr class="hero__title--sep2">
+                    <p class="main__hero--desc">Découvrez aussi les projets des autres étudiants sur la thématique « Réplique » et n’hésitez pas à formuler vous avis
+                    dans la page contact en cliquant ici.</p>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="section__card">
+                <a href="#">
+                    <h2 class="card__title">Abyssal wave</h2>
+                    <hr class="card__sep">
+                    <figure class="card__figure"><img class="card__img" src="../public/img/abyssal.webp" alt="image projet">
+                    </figure>
+                    <p class="main__section-text">CHARASSE Samuel</p>
+                </a>
+                <form action="#"><button class="section__btn-abt">En savoir plus</button></form>
+            </div>
+            
+            <div class="section__card">
+                <a href="#">
+                    <h2 class="card__title">The Long Line</h2>
+                    <hr class="card__sep">
+                    <figure class="card__figure"><img class="card__img" src="../public/img/long.webp" alt="image projet">
+                    </figure>
+                    <p class="main__section-text">BOSETI Angelo</p>
+                </a>
+                <form action="#"><button class="section__btn-abt">En savoir plus</button></form>
+            </div>
+            
+            <div class="section__card">
+                <a href="#">
+                    <h2 class="card__title">"Le Mordor Gandalf, c'est à gauche ou à droite ?"</h2>
+                    <hr class="card__sep">
+                    <figure class="card__figure"><img class="card__img" src="../public/img/mordor.webp" alt="image projet">
+                    </figure>
+                    <p class="main__section-text">ROY Jeremy</p>
+                </a>
+                <form action="#"><button class="section__btn-abt">En savoir plus</button></form>
+            </div>
+            
+            <div class="section__card">
+                <a href="#">
+                    <h2 class="card__title">"Ton avenir est entre tes mains"</h2>
+                    <hr class="card__sep">
+                    <figure class="card__figure"><img class="card__img" src="../public/img/FH.webp" alt="image projet">
+                    </figure>
+                    <p class="main__section-text">GUYOT Liloue</p>
+                </a>
+                <form action="#"><button class="section__btn-abt">En savoir plus</button></form>
+            </div>
+            
+            <div class="section__card">
+                <a href="#">
+                    <h2 class="card__title">"Across The Spider-Web" </h2>
+                    <hr class="card__sep">
+                    <figure class="card__figure"><img class="card__img" src="../public/img/Rectangle.webp" alt="image projet">
+                    </figure>
+                    <p class="main__section-text">DAMAGE Rayane</p>
+                </a>
+                <form action="#"><button class="section__btn-abt">En savoir plus</button></form>
+            </div>
+
+            <div class="section__card">
+                <a href="#">
+                    <h2 class="card__title">"My name is Bond, James Bond"</h2>
+                    <hr class="card__sep">
+                    <figure class="card__figure"><img class="card__img" src="../public/img/007.webp" alt="image projet">
+                    </figure>
+                    <p class="main__section-text">LIEGEON Mathis</p>
+                </a>
+                <form action="#"><button class="section__btn-abt">En savoir plus</button></form>
+            </div>
+            
+            <div class="section__card">
+                <a href="#">
+                    <h2 class="card__title">Unclouded by hate"</h2>
+                    <hr class="card__sep">
+                    <figure class="card__figure"><img class="card__img" src="../public/img/unclouded.webp" alt="image projet">
+                    </figure>
+                    <p class="main__section-text">QERCHI Imrane</p>
+                </a>
+                <form action="#"><button class="section__btn-abt">En savoir plus</button></form>
+            </div>
+            
+            <div class="section__card">
+                <a href="#">
+                    <h2 class="card__title">"Kill this Rabbit"</h2>
+                    <hr class="card__sep">
+                    <figure class="card__figure"><img class="card__img" src="../public/img/kill.webp" alt="image projet">
+                    </figure>
+                    <p class="main__section-text">PAUTRAT Marion</p>
+                </a>
+                <form action="#"><button class="section__btn-abt">En savoir plus</button></form>
+            </div>
+            
+            <div class="section__card">
+                <a href="#">
+                    <h2 class="card__title">OppenMind</h2>
+                    <hr class="card__sep">
+                    <figure class="card__figure"><img class="card__img" src="../public/img/Rectangle.webp" alt="image projet">
+                    </figure>
+                    <p class="main__section-text">YILMAZ Kalan</p>
+                </a>
+                <form action="#"><button class="section__btn-abt">En savoir plus</button></form>
+            </div>
+
+            <div class="section__card">
+                <a href="#">
+                    <h2 class="card__title">Oppenheimer</h2>
+                    <hr class="card__sep">
+                    <figure class="card__figure"><img class="card__img" src="../public/img/oppengeimer.webp" alt="image projet">
+                    </figure>
+                    <p class="main__section-text">MORETTI Tony</p>
+                </a>
+                <form action="#"><button class="section__btn-abt">En savoir plus</button></form>
+            </div>
+
+            <div class="section__card">
+                <a href="#">
+                    <h2 class="card__title">"Why so serious"</h2>
+                    <hr class="card__sep">
+                    <figure class="card__figure"><img class="card__img" src="../public/img/soserious.webp" alt="image projet">
+                    </figure>
+                    <p class="main__section-text">MARTINEZ Logan</p>
+                </a>
+                <form action="#"><button class="section__btn-abt">En savoir plus</button></form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__header">
+            <a class="footer__logo" href="#"><img class="logo__pia" src="../public/img/logo.webp" alt="logo site"></a>
+            <a class="footer__logo" href="https://butmmi.thomasjeu.fr/#/"><img class="logo__mmi"
+                    src="../public/img/mmi.webp" alt="logo mmi"></a>
+        </div>
+        <div>
+            <p class="footer__title">Concept</p>
+            <p class="footer__desc">Le site Le Pianiste constitue une rétrospective du célèbre film de Roman Polanski.
+                Il
+                aura pour but premier de faire
+                découvrir à son ../public une histoire vrai promulguant de fortes valeurs à travers un film, son
+                réalisateur
+                ainsi que
+                certaines oeuvres corrélées.</p>
+            <hr class="footer__sep">
+        </div>
+        <div class="footer__container">
+            <ul class="footer__list">
+                <li class="footer__li">
+                    <p class="footer__title">Sections</p>
+                </li>
+                <li class="footer__li">Répliques</li>
+                <li class="footer__li">Films</li>
+                <li class="footer__li">Réalisateur</li>
+                <li class="footer__li">Musique</li>
+                <li class="footer__li">Livres</li>
+            </ul>
+            <ul class="footer__list">
+                <li class="footer__li">
+                    <p class="footer__title">Informations</p>
+                </li>
+                <li class="footer__li">Contact</li>
+                <li class="footer__li">à propos</li>
+                <li class="footer__li">Autres projets</li>
+            </ul>
+            <ul class="footer__list--reseaux">
+                <li class="footer__li">
+                    <p class="footer__title">Réseaux</p>
+                </li>
+                <li class="footer__li--icone"><a class="footer__icone" href="#"><img src="../public/img/facebook.svg"
+                            alt="logo réseau"></a></li>
+                <li class="footer__li--icone"><a class="footer__icone" href="#"><img src="../public/img/insta.svg"
+                            alt="logo réseau"></a></li>
+                <li class="footer__li--icone"><a class="footer__icone" href="#"><img src="../public/img/X.svg"
+                            alt="logo réseau"></a></li>
+            </ul>
+        </div>
+        <div>
+            <hr class="footer__sep">
+            <p class="footer__disc">“projet réalisé dans le cadre d'un exercice pédagogique au départe-ment MMi de
+                Montbéliard“</p>
+        </div>
+    </footer>
+</body>
+
+</html>
