@@ -1,0 +1,86 @@
+.main__formulaire {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main__formulaire--div {
+    margin-bottom: 20px;
+}
+
+.main__formulaire--divinput,
+.main__formulaire--divinput2,
+#category-select,
+.main__butform--div {
+    width: auto;
+    max-width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.main__formulaire--divinput,
+.main__formulaire--divinput2,
+#category-select {
+    border-radius: 3px;
+    border: 2px solid white;
+    outline: none;
+    width: 100%;
+    height: auto;
+}
+
+/* Style pour les champs de saisie */
+.main__formulaire--divinput {
+    background-color: transparent;
+    color: white;
+}
+
+.main__formulaire--divinput2 {
+    background-color: transparent;
+    color: white;
+    padding-bottom: 150px;
+}
+
+/* Style pour le menu déroulant */
+#category-select {
+    background-color: transparent;
+    color: white;
+}
+
+.main__butform-div {
+    padding-top: 30px;
+}
+
+label {
+    font-family: Jost;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0%;
+    color: var(--gris1);
+    margin-top: 0;
+    color: var(--gris6);
+}
+
+.main__formulaire--divselect {
+    color: var(--gris6);
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 200;
+    line-height: 150%;
+    letter-spacing: 0%;
+}
+
+.main__formulaire--selectoption {
+    color: var(--gris1);
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 200;
+    line-height: 150%;
+    letter-spacing: 0%;
+}
+
+.main__butform--div {
+    margin-bottom: 100px;
+}
