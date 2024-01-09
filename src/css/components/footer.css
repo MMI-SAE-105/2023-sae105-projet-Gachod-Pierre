@@ -45,12 +45,13 @@ footer {
 }
 
 
-.footer__li {
+.footer__a {
     font-family: Inter;
     font-size: 13px;
     font-weight: 700;
     line-height: 170%;
     letter-spacing: 0%;
+    color: var(--gris6);
 }
 
 .footer__sep {

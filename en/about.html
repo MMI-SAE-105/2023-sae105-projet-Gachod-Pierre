@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="../src/css/styles.css">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+</head>
+
+<body class="body2">
+    <header class="header">
+        <nav id="mainNav" class="header__nav" x-show="menuIsOpen" x-transition.scale.origin.top>
+            <div class="header__nav--menu">
+                <a href="#" class="header__logo">
+                    <img src="../public/img/logo.webp" alt="pianiste logo" class="logo__pia" />
+                </a>
+
+                <a href="../fr/about.html" class="header__lang">
+                    <img src="../public/img/EN.svg" alt="bouton langue" class="sigle__lang" />
+                </a>
+
+                <button aria-controls="mainNav" class="header__menu-btn" @click="menuIsOpen = ! menuIsOpen">
+                    <img src="../public/img/menu-open.svg" alt="Icone menu" class="header__menu-icon" />
+                </button>
+            </div>
+
+
+            <ul class="header__nav-list">
+                <li class="menu__item"><a class="menu__link" href="./réplique.html">Quote</a></li>
+                <li>
+                    <p class="header__nav-desc">The line from the film</p>
+                </li>
+                <li>
+                    <hr class="header__hr">
+                </li>
+                <li class="menu__item"><a class="menu__link" href="./films.html">Films</a></li>
+                <li>
+                    <p class="header__nav-desc">The film The Pianist and related works</p>
+                </li>
+                <li>
+                    <hr class="header__hr">
+                </li>
+                <li class="menu__item"><a class="menu__link" href="./réalisateur.html">director</a></li>
+                <li>
+                    <p class="header__nav-desc">Roman Polanski's story</p>
+                </li>
+                <li>
+                    <hr class="header__hr">
+                </li>
+                <li class="menu__item"><a class="menu__link" href="./musique.html">Music</a></li>
+                <li>
+                    <p class="header__nav-desc">Nocturne n'20 C sharp minor</p>
+                </li>
+                <li>
+                    <hr class="header__hr">
+                </li>
+                <li class="menu__item"><a class="menu__link" href="./livres.html">Books</a></li>
+                <li>
+                    <p class="header__nav-desc">The book The Pianist and related works</p>
+                </li>
+                <li>
+                    <hr class="header__hr--end">
+                </li>
+            </ul>
+
+            <ul class="header__nav-info">
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./projects.html">Other projects</a></li>
+            </ul>
+
+        </nav>
+
+        <a href="#" class="header__logo">
+            <img src="../public/img/logo.webp" alt="pianiste logo" class="logo__pia" />
+        </a>
+
+        <button aria-controls="mainNav" class="header__menu-btn" @click="menuIsOpen = ! menuIsOpen">
+            <img src="../public/img/menu-open.svg" alt="Icone menu" class="header__menu-icon" />
+        </button>
+
+    </header>
+
+    <main class="main">
+        <section class="section">
+            <div class="main__hero">
+                <div class="text__content">
+                    <h1 class="main__hero-title">
+                        About
+                    </h1>
+                    <hr class="hero__title--sep2">
+                    <p class="main__hero--desc2">Hi, I'm Pierre Gachod, a first-year student at BUT in the multimedia and internet professions in Montbéliard.
+                    Montbéliard. The MMI teachers put out a call for projects with the following subject: "Replica". Our
+                    goal was to find a replica associated with their film and turn it into a website. This site is dedicated to the film
+                    Pianist, directed by Roman Polanski and released in 2002.</p>
+                </div>
+                <img class="main__hero-imgfond" src="../public/img/avatar.webp" alt="fond">
+            </div>
+        </section>
+        <section class="section">
+            <div class="section__article">
+                <h2 class="article__title2">Who am I ?</h2>
+                <hr class="article__sep">
+                <p class="main__section-text">As a film and music enthusiast, I was touched by the film The Pianist. So I wanted
+                wanted to share my admiration
+                for this work. So I tried to create a modern, attractive site that complied with accessibility, ergonomic and ecological
+                standards,
+                ergonomic and ecological standards. I also benefited from the help of an intelligent virtual assistant who was able to
+                provide me with
+                with
+                information and useful tips for writing my content.
+                <br><br>The aim of this site is to help you discover or rediscover this exceptional film, which tells the true story of
+                true story of
+                Władysław Szpilman, a Polish-Jewish pianist who survives the Nazi occupation of Warsaw during World War II.
+                Nazi occupation of Warsaw during the Second World War. The film is a moving work that shows the barbarity of war, but
+                also the strength of art and
+                and
+                and music.
+                <br><br>The site features several pages exploring different facets of the film, such as the film's replica,
+                the
+                presentation of the film and films related to the Holocaust, director Roman Polanski, the night music 4 in
+                E
+                minor by Frédéric Chopin, and the book The Pianist, from which the film is adapted.
+                <br><br>A visit to this site will bring you many emotions, just like the film. This site is also intended
+                be a source
+                to potentially inspire visitors to watch the film, or to see it again, by showing them its
+                showing its
+                its richness and depth.
+                <br><br>We hope you enjoy your visit to this site, and we hope you enjoy the film The Pianist
+                as much
+                as we do. Please don't hesitate to contact us if you have any questions or suggestions. Thank you for your interest.
+                </p>
+            </div>
+        </section>
+        <section class="section">
+            <div class="section__article">
+                <h2 class="article__title2">Glossary</h2>
+                <hr class="article__sep">
+                <ul class="article__ul">
+                    <li class="article__li"><p class="article__li--text">*<strong class="article__li--title">Shoah</strong>: The Shoah is the extermination of 6 million Jews by the Nazis during the Second World War.</p></li>
+                    <li class="article__li"><p class="article__li--text">*<strong class="article__li--title">Warsaw raids</strong>: Nazi operation to exterminate the Jews of the ghetto in 1943.</p></li>
+                    <li class="article__li"><p class="article__li--text">*<strong class="article__li--title">Quote</strong>: A sentence spoken by a character in a film, play or book.</p></li>
+                    <li class="article__li"><p class="article__li--text">*<strong class="article__li--title">Eponym</strong>: Having the same name as something or someone else. For example, the film The Pianist is named after the novel by
+                    bySzpilman.</p></li>
+                    <li class="article__li"><p class="article__li--text">*<strong class="article__li--title">Music lover</strong>: One who loves music and knows a lot about it. For example, the German officer Hosenfeld is a music lover because he
+                    Szpilman's talent.</p></li>
+                    <li class="article__li"><p class="article__li--text">*<strong class="article__li--title">Sect</strong>: A religious or ideological group that distinguishes itself from established religions and exerts a strong influence on
+                    its followers, often to the detriment of their freedom or well-being.
+                    followers, often to the detriment of their freedom or well-being.</p></li>
+                    <li class="article__li"><p class="article__li--text">*<strong class="article__li--title">Arpège</strong>: A succession of notes played one after the other on a stringed or keyboard instrument, forming a chord.</p></li>
+                    <li class="article__li"><p class="article__li--text">*<strong class="article__li--title">Coda</strong>: A final part of a piece of music, used to conclude the piece.</p></li>
+                    <li class="article__li"><p class="article__li--text">*<strong class="article__li--title">Genocide</strong>: A crime against humanity which consists of the intentional and systematic extermination of an ethnic, religious or
+                    political group,
+                    religious or political group.</p></li>
+                    <li class="article__li"><p class="article__li--text">*<strong class="article__li--title">Typhus</strong>: An infectious disease caused by bacteria transmitted by lice or fleas.
+                    headaches and rashes.</p></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__header">
+            <a class="footer__logo" href="#"><img class="logo__pia" src="../public/img/logo.webp" alt="logo site"></a>
+            <a class="footer__logo" href="https://butmmi.thomasjeu.fr/#/"><img class="logo__mmi"
+                    src="../public/img/mmi.webp" alt="logo mmi"></a>
+        </div>
+        <div>
+            <p class="footer__title">Concept</p>
+            <p class="footer__desc">The Pianist website is a retrospective of Roman Polanski's famous film. It
+            primary aim is to introduce
+            discover a true story that promotes strong values through a film, its director
+            as well as
+            and a number of related works.</p>
+            <hr class="footer__sep">
+        </div>
+        <div class="footer__container">
+            <ul class="footer__list">
+                <li class="footer__li">
+                    <p class="footer__title">Sections</p>
+                </li>
+                <li class="footer__li"><a class="footer__a" href="./réplique.html">Quote</a></li>
+                <li class="footer__li"><a class="footer__a" href="./films.html">Films</a></li>
+                <li class="footer__li"><a class="footer__a" href="./réalisateur.html">Director</a></li>
+                <li class="footer__li"><a class="footer__a" href="./musique.html">Music</a></li>
+                <li class="footer__li"><a class="footer__a" href="./livres.html">Books</a></li>
+            </ul>
+            <ul class="footer__list">
+                <li class="footer__li">
+                    <p class="footer__title">Informations</p>
+                </li>
+                <li class="footer__li"><a class="footer__a" href="./contact.html">Contact</a></li>
+                <li class="footer__li"><a class="footer__a" href="./about.html">About</a></li>
+                <li class="footer__li"><a class="footer__a" href="./projects.html">Other projects</a></li>
+            </ul>
+            <ul class="footer__list--reseaux">
+                <li class="footer__li">
+                    <p class="footer__title">Social</p>
+                </li>
+                <li class="footer__li--icone"><a class="footer__icone"
+                        href="https://www.facebook.com/pierre.gachod.1/about"><img src="../public/img/facebook.svg"
+                            alt="logo réseau"></a></li>
+                <li class="footer__li--icone"><a class="footer__icone"
+                        href="https://www.instagram.com/pierre_gchd_/?next=%2F"><img src="../public/img/insta.svg"
+                            alt="logo réseau"></a></li>
+                <li class="footer__li--icone"><a class="footer__icone" href="https://twitter.com/GachodPierre"><img
+                            src="../public/img/X.svg" alt="logo réseau"></a></li>
+            </ul>
+        </div>
+        <div>
+            <hr class="footer__sep">
+            <a class="footer__a" href="mailto:pierre.gachodpro@gmail.com">“project carried out as part of an educational
+            at the MMi departement in Montbéliard.
+            Montbéliard, to contact me click <strong>here</strong>“</a>
+        </div>
+    </footer>
+</body>
+
+</html>

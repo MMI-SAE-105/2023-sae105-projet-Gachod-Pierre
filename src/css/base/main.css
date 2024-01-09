@@ -8,3 +8,109 @@
     margin-bottom: 80px;
     color: var(--gris6);
 }
+
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: var(--gris1);
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: var(--gris6);
+}
+
+
+h1 {
+    font-family: Jost;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: 0%;
+    color: var(--gris1);
+}
+
+h2 {
+    font-family: Jost;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 110%;
+    letter-spacing: 0%;
+    color: var(--gris1);
+    margin-bottom: 0;
+}
+
+h3 {
+    font-family: Jost;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0%;
+    color: var(--gris1);
+    margin-top: 0;
+}
+
+p {
+    font-family: Jost;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: var(--gris1);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    background-color: var(--gris5);
+}
+
+.body2 {
+    background-color: var(--gris1);
+}
+
+main {
+    margin: 0 var(--space2x);
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption {
+    font-family: Jost;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: var(--gris1);
+    text-align: left;
+}
+
+audio {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Films</title>
+    <link rel="stylesheet" href="../src/css/styles.css">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+</head>
+
+<body :class="{ 'noscroll': displayedImage !== null }" x-data="{
+                displayedImage: null,
+                displayedFigcap: null,
+                isEnlarged: false,
+            }">
+    <header class="header">
+        <nav id="mainNav" class="header__nav" x-show="menuIsOpen" x-transition.scale.origin.top>
+            <div class="header__nav--menu">
+                <a href="#" class="header__logo">
+                    <img src="../public/img/logo.webp" alt="pianiste logo" class="logo__pia" />
+                </a>
+    
+                <a href="../fr/films.html" class="header__lang">
+                    <img src="../public/img/EN.svg" alt="bouton langue" class="sigle__lang" />
+                </a>
+    
+                <button aria-controls="mainNav" class="header__menu-btn" @click="menuIsOpen = ! menuIsOpen">
+                    <img src="../public/img/menu-open.svg" alt="Icone menu" class="header__menu-icon" />
+                </button>
+            </div>
+    
+    
+            <ul class="header__nav-list">
+                <li class="menu__item"><a class="menu__link" href="./réplique.html">Quote</a></li>
+                <li>
+                    <p class="header__nav-desc">The line from the film</p>
+                </li>
+                <li>
+                    <hr class="header__hr">
+                </li>
+                <li class="menu__item"><a class="menu__link" href="./films.html">Films</a></li>
+                <li>
+                    <p class="header__nav-desc">The film The Pianist and related works</p>
+                </li>
+                <li>
+                    <hr class="header__hr">
+                </li>
+                <li class="menu__item"><a class="menu__link" href="./réalisateur.html">director</a></li>
+                <li>
+                    <p class="header__nav-desc">Roman Polanski's story</p>
+                </li>
+                <li>
+                    <hr class="header__hr">
+                </li>
+                <li class="menu__item"><a class="menu__link" href="./musique.html">Music</a></li>
+                <li>
+                    <p class="header__nav-desc">Nocturne n'20 C sharp minor</p>
+                </li>
+                <li>
+                    <hr class="header__hr">
+                </li>
+                <li class="menu__item"><a class="menu__link" href="./livres.html">Books</a></li>
+                <li>
+                    <p class="header__nav-desc">The book The Pianist and related works</p>
+                </li>
+                <li>
+                    <hr class="header__hr--end">
+                </li>
+            </ul>
+    
+            <ul class="header__nav-info">
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./projects.html">Other projects</a></li>
+            </ul>
+    
+        </nav>
+    
+        <a href="#" class="header__logo">
+            <img src="../public/img/logo.webp" alt="pianiste logo" class="logo__pia" />
+        </a>
+    
+        <button aria-controls="mainNav" class="header__menu-btn" @click="menuIsOpen = ! menuIsOpen">
+            <img src="../public/img/menu-open.svg" alt="Icone menu" class="header__menu-icon" />
+        </button>
+    
+    </header>
+
+    <main class="main">
+        <section class="section">
+            <div class="main__hero">
+                <div class="text__content">
+                    <h1 class="main__hero-title">
+                        Films and related works
+                    </h1>
+                    <hr class="hero__title--sep">
+                    <p class="main__hero--desc">The Pianist, a moving film about music and war, adapted from the book by Wladyslaw Szpilman.
+                    Other films
+                    about the Shoah.</p>
+                </div>
+                <img class="main__hero-imgfond" src="../public/img/fondfi.webp" alt="fond">
+                <form class="read__but" action="#"><button class="section__btn-read">Read</button></form>
+            </div>
+        </section>
+
+        <section class="section">
+            <article class="article">
+                <div class="section__article">
+                    <h2 class="article__title">The Pianist, a cult film</h2>
+                    <hr class="article__sep">
+                    <p class="main__article-text">The Pianist is a film directed by Roman Polanski, released in 2002. It is an adaptation of the autobiographical novel
+                    eponymous novel by Władysław Szpilman, a Polish-Jewish pianist who survived the Nazi occupation of Warsaw during the
+                    Second World War. The film traces his journey from the invasion of Poland in 1939 to the liberation of the city in
+                    the city in 1945, including his imprisonment in the ghetto, his escape, his hiding and his meeting with a music-loving
+                    German officer who saves his life.
+                    German officer who saves his life.</p>
+                    <figure class="article__figure"><img class="article__img" src="../public/img/filmpia.webp" alt="image film"></figure>
+                </div>
+            </article>
+            <article class="article">
+                <div class="section__article">
+                    <h2 class="article__title">A critically acclaimed film</h2>
+                    <hr class="article__sep">
+                    <p class="main__article-text">The film has been hailed by critics and audiences alike for its sober, realistic staging, meticulous historical
+                    reconstruction, poignant musical score and masterful lead performance by Adrien Brody.
+                    and the masterly performance of Adrien Brody in the lead role. The Pianist
+                    won numerous prestigious awards, including the Palme d'or at the Cannes Film Festival, three Oscars (best director,
+                    Best Actor and Best Adaptation), seven Césars (including Best Film, Best Director and Best Actor) and two BAFTAs (Best
+                    Film and Best Actor).
+                    two BAFTAs (Best Film and Best Director).</p>
+                    <figure class="article__figure">
+                        <img class="article__img" src="../public/img/adrienbrody.webp" alt="image adrien brody">
+                        <figcaption>"Adrien Brody receives critical acclaim" <strong>cannes festival 2023</strong></figcaption>
+                    </figure>
+                </div>
+            </article>
+        </section>
+        <section class="section">
+            <article class="article">
+                <div class="section__article">
+                    <h2 class="article__title">Other films on the theme of music and war</h2>
+                    <hr class="article__sep">
+                </div>
+                <div class="galerie">
+                    <div class="overlay" x-show="displayedImage" @click="displayedImage=null"
+                        @keyup.escape.window="displayedImage = null">
+                        <figure>
+                            <img src="#" :src="displayedImage" alt="image affichée">
+                            <figcaption class="galerie_figcap" x-text="displayedFigcap"></figcaption>
+                        </figure>
+                    </div>
+                    <div class="miniatures">
+                        <img src="../public/img/lavieestbellecar1.webp" alt="minia" 
+                            @click="displayedImage = '../public/img/lavieestbellecar1.webp'; displayedFigcap = 'La vie est belle (1997)'">
+                    </div>
+                    <div class="miniatures">
+                        <img src="../public/img/listeschindlercar2.webp" alt="minia"
+                            @click="displayedImage = '../public/img/listeschindlercar2.webp'; displayedFigcap = 'La liste de Schindler (1993)'">
+                    </div>
+                    <div class="miniatures">
+                        <img src="../public/img/symphoniecar3.webp" alt="minia"
+                            @click="displayedImage = '../public/img/symphoniecar3.webp'; displayedFigcap = 'Symphonie du nouveau monde (1993)'">
+                    </div>
+                    <div class="miniatures">
+                        <img src="../public/img/goodmorningcar4.webp" alt="minia"
+                            @click="displayedImage = '../public/img/goodmorningcar4.webp'; displayedFigcap = 'Good morning Vietnam (1987)'">
+                    </div>
+                    <div class="miniatures">
+                        <img src="../public/img/haircar5.webp" alt="minia"
+                            @click="displayedImage = '../public/img/haircar5.webp'; displayedFigcap = 'Hair (1979)'">
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__header">
+            <a class="footer__logo" href="#"><img class="logo__pia" src="../public/img/logo.webp" alt="logo site"></a>
+            <a class="footer__logo" href="https://butmmi.thomasjeu.fr/#/"><img class="logo__mmi"
+                    src="../public/img/mmi.webp" alt="logo mmi"></a>
+        </div>
+        <div>
+            <p class="footer__title">Concept</p>
+            <p class="footer__desc">The Pianist website is a retrospective of Roman Polanski's famous film. It
+                primary aim is to introduce
+                discover a true story that promotes strong values through a film, its director
+                as well as
+                and a number of related works.</p>
+            <hr class="footer__sep">
+        </div>
+        <div class="footer__container">
+            <ul class="footer__list">
+                <li class="footer__li">
+                    <p class="footer__title">Sections</p>
+                </li>
+                <li class="footer__li"><a class="footer__a" href="./réplique.html">Quote</a></li>
+                <li class="footer__li"><a class="footer__a" href="./films.html">Films</a></li>
+                <li class="footer__li"><a class="footer__a" href="./réalisateur.html">Director</a></li>
+                <li class="footer__li"><a class="footer__a" href="./musique.html">Music</a></li>
+                <li class="footer__li"><a class="footer__a" href="./livres.html">Books</a></li>
+            </ul>
+            <ul class="footer__list">
+                <li class="footer__li">
+                    <p class="footer__title">Informations</p>
+                </li>
+                <li class="footer__li"><a class="footer__a" href="./contact.html">Contact</a></li>
+                <li class="footer__li"><a class="footer__a" href="./about.html">About</a></li>
+                <li class="footer__li"><a class="footer__a" href="./projects.html">Other projects</a></li>
+            </ul>
+            <ul class="footer__list--reseaux">
+                <li class="footer__li">
+                    <p class="footer__title">Social</p>
+                </li>
+                <li class="footer__li--icone"><a class="footer__icone"
+                        href="https://www.facebook.com/pierre.gachod.1/about"><img src="../public/img/facebook.svg"
+                            alt="logo réseau"></a></li>
+                <li class="footer__li--icone"><a class="footer__icone"
+                        href="https://www.instagram.com/pierre_gchd_/?next=%2F"><img src="../public/img/insta.svg"
+                            alt="logo réseau"></a></li>
+                <li class="footer__li--icone"><a class="footer__icone" href="https://twitter.com/GachodPierre"><img
+                            src="../public/img/X.svg" alt="logo réseau"></a></li>
+            </ul>
+        </div>
+        <div>
+            <hr class="footer__sep">
+            <a class="footer__a" href="mailto:pierre.gachodpro@gmail.com">“project carried out as part of an educational
+                at the MMi departement in Montbéliard.
+                Montbéliard, to contact me click <strong>here</strong>“</a>
+        </div>
+    </footer>
+</body>
+
+</html>

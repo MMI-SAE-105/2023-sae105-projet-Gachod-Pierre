@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Réplique</title>
-    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="../src/css/styles.css">
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
 </head>
 
@@ -14,49 +14,49 @@
         <nav id="mainNav" class="header__nav" x-show="menuIsOpen" x-transition.scale.origin.top>
             <div class="header__nav--menu">
                 <a href="#" class="header__logo">
-                    <img src="public/img/logo.png" alt="pianiste logo" class="logo__pia" />
+                    <img src="../public/img/logo.webp" alt="pianiste logo" class="logo__pia" />
                 </a>
 
-                <a href="#" class="header__lang">
-                    <img src="public/img/FR.svg" alt="bouton langue" class="sigle__lang" />
+                <a href="../en/réplique.html" class="header__lang">
+                    <img src="../public/img/FR.svg" alt="bouton langue" class="sigle__lang" />
                 </a>
 
                 <button aria-controls="mainNav" class="header__menu-btn" @click="menuIsOpen = ! menuIsOpen">
-                    <img src="public/img/menu-open.svg" alt="Icone menu" class="header__menu-icon" />
+                    <img src="../public/img/menu-open.svg" alt="Icone menu" class="header__menu-icon" />
                 </button>
             </div>
 
 
             <ul class="header__nav-list">
-                <li class="menu__item"><a class="menu__link" href="#">Réplique</a></li>
+                <li class="menu__item"><a class="menu__link" href="./réplique.html">Réplique</a></li>
                 <li>
                     <p class="header__nav-desc">La réplique du film</p>
                 </li>
                 <li>
                     <hr class="header__hr">
                 </li>
-                <li class="menu__item"><a class="menu__link" href="#">Films</a></li>
+                <li class="menu__item"><a class="menu__link" href="./films.html">Films</a></li>
                 <li>
                     <p class="header__nav-desc">Le film Le Pianiste ainsi que les oeuvres corrélées</p>
                 </li>
                 <li>
                     <hr class="header__hr">
                 </li>
-                <li class="menu__item"><a class="menu__link" href="#">Réalisateur</a></li>
+                <li class="menu__item"><a class="menu__link" href="./réalisateur.html">Réalisateur</a></li>
                 <li>
                     <p class="header__nav-desc">L'histoire de Roman Polanski</p>
                 </li>
                 <li>
                     <hr class="header__hr">
                 </li>
-                <li class="menu__item"><a class="menu__link" href="#">Musique</a></li>
+                <li class="menu__item"><a class="menu__link" href="./musique.html">Musique</a></li>
                 <li>
                     <p class="header__nav-desc">Nocturne n'20 do dièse mineur</p>
                 </li>
                 <li>
                     <hr class="header__hr">
                 </li>
-                <li class="menu__item"><a class="menu__link" href="#">Livres</a></li>
+                <li class="menu__item"><a class="menu__link" href="./livres.html">Livres</a></li>
                 <li>
                     <p class="header__nav-desc">Le livre Le Pianiste ainsi que les oeuvres corrélées</p>
                 </li>
@@ -66,19 +66,19 @@
             </ul>
 
             <ul class="header__nav-info">
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">à propos</a></li>
-                <li><a href="#">Autres projets</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./about.html">à propos</a></li>
+                <li><a href="./projects.html">Autres projets</a></li>
             </ul>
 
         </nav>
 
         <a href="#" class="header__logo">
-            <img src="public/img/logo.png" alt="pianiste logo" class="logo__pia" />
+            <img src="../public/img/logo.webp" alt="pianiste logo" class="logo__pia" />
         </a>
 
         <button aria-controls="mainNav" class="header__menu-btn" @click="menuIsOpen = ! menuIsOpen">
-            <img src="public/img/menu-open.svg" alt="Icone menu" class="header__menu-icon" />
+            <img src="../public/img/menu-open.svg" alt="Icone menu" class="header__menu-icon" />
         </button>
 
     </header>
@@ -93,7 +93,7 @@
                     <hr class="hero__title--sep">
                     <p class="main__hero--desc">Une phrase simple et profonde qui résume le film : la survie grâce à la musique face à la barbarie nazie. Découvrez cette phrase lourde de valeur et de sens.</p>
                 </div>
-                <img class="main__hero-imgfond" src="public/img/fondrep.webp" alt="fond">
+                <img class="main__hero-imgfond" src="../public/img/fondrep.webp" alt="fond">
                 <form class="read__but" action="#"><button class="section__btn-read">Lire</button></form>
             </div>
         </section>
@@ -107,7 +107,7 @@
                     un groupe de soldats nazis prisonniers : « Vous m’avez tout pris. Moi, un musicien. Vous avez pris mon violon, vous avez
                     pris mon âme ». Cette phrase riche de sens et de valeurs présente l’importance de la musique chez l’humain.</p>
                     <figure class="article__figure">
-                        <img class="article__img" src="public/img/imgrep1.webp" alt="image réplique">
+                        <img class="article__img" src="../public/img/imgrep1.webp" alt="image réplique">
                         <figcaption>"scène du polonais cherchant le pianiste" <strong>extrait du film</strong></figcaption>
                     </figure>
                 </div>
@@ -122,12 +122,12 @@
                     la musique et par le talent du pianiste, décide de l’aider à survivre en lui apportant de la nourriture et en lui
                     trouvant un autre abri. Il lui dit : “je ne sais pas comment vous remercier”. Szpilman répond : “merci à vous”.</p>
                     <figure class="article__figure">
-                        <video controls src="public/video/le_pianiste.mp4" type="video/mp4"></video>
+                        <video controls src="../public/video/le_pianiste.mp4"></video>
                         <figcaption>"scène du polonais ayant pitié face au Pianiste grâce à la musique" <strong>extrait du film</strong></figcaption>
                     </figure>
                     <p class="main__article-text">Cette scène montre comment la musique peut créer un lien entre deux êtres humains que tout oppose à première vue, mais
                     qui finalement restent des humains sensibles à certaines choses pouvant faire preuve d’empathie et de générosité. Pour
-                    en savoir plus sur la musique du Film, <a href="#"><strong>cliquez ici</strong></a></p>
+                    en savoir plus sur la musique du Film, <a href="./musique.html"><strong>cliquez ici</strong></a></p>
                 </div>
             </article>
         </section>
@@ -136,15 +136,15 @@
 
     <footer class="footer">
         <div class="footer__header">
-            <a class="footer__logo" href="#"><img class="logo__pia" src="public/img/logo.webp" alt="logo site"></a>
-            <a class="footer__logo" href="https://butmmi.thomasjeu.fr/#/"><img class="logo__mmi" src="public/img/mmi.webp"
-                    alt="logo mmi"></a>
+            <a class="footer__logo" href="#"><img class="logo__pia" src="../public/img/logo.webp" alt="logo site"></a>
+            <a class="footer__logo" href="https://butmmi.thomasjeu.fr/#/"><img class="logo__mmi"
+                    src="../public/img/mmi.webp" alt="logo mmi"></a>
         </div>
         <div>
             <p class="footer__title">Concept</p>
             <p class="footer__desc">Le site Le Pianiste constitue une rétrospective du célèbre film de Roman Polanski. Il
                 aura pour but premier de faire
-                découvrir à son public une histoire vrai promulguant de fortes valeurs à travers un film, son réalisateur
+                découvrir à son ../public une histoire vrai promulguant de fortes valeurs à travers un film, son réalisateur
                 ainsi que
                 certaines oeuvres corrélées.</p>
             <hr class="footer__sep">
@@ -154,36 +154,39 @@
                 <li class="footer__li">
                     <p class="footer__title">Sections</p>
                 </li>
-                <li class="footer__li">Répliques</li>
-                <li class="footer__li">Films</li>
-                <li class="footer__li">Réalisateur</li>
-                <li class="footer__li">Musique</li>
-                <li class="footer__li">Livres</li>
+                <li class="footer__li"><a class="footer__a" href="./réplique.html">Répliques</a></li>
+                <li class="footer__li"><a class="footer__a" href="./films.html">Films</a></li>
+                <li class="footer__li"><a class="footer__a" href="./réalisateur.html">Réalisateur</a></li>
+                <li class="footer__li"><a class="footer__a" href="./musique.html">Musique</a></li>
+                <li class="footer__li"><a class="footer__a" href="./livres.html">Livres</a></li>
             </ul>
             <ul class="footer__list">
                 <li class="footer__li">
                     <p class="footer__title">Informations</p>
                 </li>
-                <li class="footer__li">Contact</li>
-                <li class="footer__li">à propos</li>
-                <li class="footer__li">Autres projets</li>
+                <li class="footer__li"><a class="footer__a" href="./contact.html">Contact</a></li>
+                <li class="footer__li"><a class="footer__a" href="./about.html">à propos</a></li>
+                <li class="footer__li"><a class="footer__a" href="./projects.html">Autres projets</a></li>
             </ul>
             <ul class="footer__list--reseaux">
                 <li class="footer__li">
                     <p class="footer__title">Réseaux</p>
                 </li>
-                <li class="footer__li--icone"><a class="footer__icone" href="#"><img src="public/img/facebook.svg"
+                <li class="footer__li--icone"><a class="footer__icone"
+                        href="https://www.facebook.com/pierre.gachod.1/about"><img src="../public/img/facebook.svg"
                             alt="logo réseau"></a></li>
-                <li class="footer__li--icone"><a class="footer__icone" href="#"><img src="public/img/insta.svg"
+                <li class="footer__li--icone"><a class="footer__icone"
+                        href="https://www.instagram.com/pierre_gchd_/?next=%2F"><img src="../public/img/insta.svg"
                             alt="logo réseau"></a></li>
-                <li class="footer__li--icone"><a class="footer__icone" href="#"><img src="public/img/X.svg"
-                            alt="logo réseau"></a></li>
+                <li class="footer__li--icone"><a class="footer__icone" href="https://twitter.com/GachodPierre"><img
+                            src="../public/img/X.svg" alt="logo réseau"></a></li>
             </ul>
         </div>
         <div>
             <hr class="footer__sep">
-            <p class="footer__disc">“projet réalisé dans le cadre d'un exercice pédagogique au départe-ment MMi de
-                Montbéliard“</p>
+            <a class="footer__a" href="mailto:pierre.gachodpro@gmail.com">“projet réalisé dans le cadre d'un exercice
+                pédagogique au départe-ment MMi de
+                Montbéliard, pour me contacter cliquez <strong>ici</strong>“</a>
         </div>
     </footer>
 </body>

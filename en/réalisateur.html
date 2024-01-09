@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réalisateur</title>
+    <link rel="stylesheet" href="../src/css/styles.css">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav id="mainNav" class="header__nav" x-show="menuIsOpen" x-transition.scale.origin.top>
+            <div class="header__nav--menu">
+                <a href="#" class="header__logo">
+                    <img src="../public/img/logo.webp" alt="pianiste logo" class="logo__pia" />
+                </a>
+    
+                <a href="../fr/réalisateur.html" class="header__lang">
+                    <img src="../public/img/EN.svg" alt="bouton langue" class="sigle__lang" />
+                </a>
+    
+                <button aria-controls="mainNav" class="header__menu-btn" @click="menuIsOpen = ! menuIsOpen">
+                    <img src="../public/img/menu-open.svg" alt="Icone menu" class="header__menu-icon" />
+                </button>
+            </div>
+    
+    
+            <ul class="header__nav-list">
+                <li class="menu__item"><a class="menu__link" href="./réplique.html">Quote</a></li>
+                <li>
+                    <p class="header__nav-desc">The line from the film</p>
+                </li>
+                <li>
+                    <hr class="header__hr">
+                </li>
+                <li class="menu__item"><a class="menu__link" href="./films.html">Films</a></li>
+                <li>
+                    <p class="header__nav-desc">The film The Pianist and related works</p>
+                </li>
+                <li>
+                    <hr class="header__hr">
+                </li>
+                <li class="menu__item"><a class="menu__link" href="./réalisateur.html">director</a></li>
+                <li>
+                    <p class="header__nav-desc">Roman Polanski's story</p>
+                </li>
+                <li>
+                    <hr class="header__hr">
+                </li>
+                <li class="menu__item"><a class="menu__link" href="./musique.html">Music</a></li>
+                <li>
+                    <p class="header__nav-desc">Nocturne n'20 C sharp minor</p>
+                </li>
+                <li>
+                    <hr class="header__hr">
+                </li>
+                <li class="menu__item"><a class="menu__link" href="./livres.html">Books</a></li>
+                <li>
+                    <p class="header__nav-desc">The book The Pianist and related works</p>
+                </li>
+                <li>
+                    <hr class="header__hr--end">
+                </li>
+            </ul>
+    
+            <ul class="header__nav-info">
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./projects.html">Other projects</a></li>
+            </ul>
+    
+        </nav>
+    
+        <a href="#" class="header__logo">
+            <img src="../public/img/logo.webp" alt="pianiste logo" class="logo__pia" />
+        </a>
+    
+        <button aria-controls="mainNav" class="header__menu-btn" @click="menuIsOpen = ! menuIsOpen">
+            <img src="../public/img/menu-open.svg" alt="Icone menu" class="header__menu-icon" />
+        </button>
+    
+    </header>
+
+    <main class="main">
+        <section class="section">
+            <div class="main__hero">
+                <div class="text__content">
+                    <h1 class="main__hero-title">
+                        Roman Polanski, the director's story
+                    </h1>
+                    <hr class="hero__title--sep">
+                    <p class="main__hero--desc">Roman Polanski, a Franco-Polish director, marked by the persecution of Jews during the war. The Pianist, his most
+                    his most intimate film.</p>
+                </div>
+                <img class="main__hero-imgfond" src="../public/img/fondréa.webp" alt="fond">
+                <form class="read__but" action="#"><button class="section__btn-read">Read</button></form>
+            </div>
+        </section>
+
+        <section class="section">
+            <article class="article">
+                <div class="section__article">
+                    <h2 class="article__title">Roman Polanski, a director of genius and scandal</h2>
+                    <hr class="article__sep">
+                    <p class="main__article-text">Roman Polanski is a Polish-French film director, producer, screenwriter and actor, born in Paris on August 18, 1933. He
+                    is considered
+                    considered one of the most important and controversial filmmakers of his time, having produced
+                    genres, from thrillers and historical dramas to black comedies and horror films.</p>
+                    <figure class="article__figure">
+                        <img class="article__img" src="../public/img/roman1.webp" alt="image réa">
+                        <figcaption>"Roman Polanski in Poland"<strong>01/2015 (EPA/MAXPPP)</strong></figcaption>
+                    </figure>
+                </div>
+            </article>
+            <article class="article">
+                <div class="section__article">
+                    <h2 class="article__title">Biography</h2>
+                    <hr class="article__sep">
+                    <p class="main__article-text">Roman Polanski is a Franco-Polish filmmaker who lived through the horrors of the Second World War, success and glory,
+                    but also scandal and exile.
+                    but also scandal and exile.</p>
+                    <figure class="article__figure">
+                        <img class="article__img" src="../public/img/roman2.webp" alt="image roman polanski">
+                        <figcaption>"Roman Polanski at the time of his arrest" <strong>1977</strong></figcaption>
+                    </figure>
+                    <p class="main__article-text">His life and work are marked by themes of violence, madness, sex and death.
+                    <br><br>Born in Paris in 1933, he moved to Poland with his Jewish parents in 1937. He survives the Krakow ghetto and his
+                    mother's
+                    deportation to Auschwitz. He took refuge in art and cinema, making his first short films at the
+                    school in Łódź.</p>
+                    <figure class="article__figure">
+                        <img class="article__img" src="../public/img/ghetto.webp" alt="image ghetto">
+                        <figcaption>Cracovie Ghetto</figcaption>
+                    </figure>
+                    <p class="main__article-text"><br>He made his name with Le Couteau dans l'eau (1962), which earned him an Oscar nomination. He left for
+                    England, then the United States, where he made such cult films as Repulsion (1965), Rosemary's Baby (1968) and
+                    Chinatown (1974).</p>
+                    <figure class="article__figure"><img class="article__img" src="../public/img/couteau1.webp" alt="illustration le couteau dans l'eau">
+                    </figure>
+                    <p class="main__article-text">He also experienced personal tragedy when his wife Sharon Tate was murdered by Charles Manson's cult in 1969. He
+                    was charged with rape of a minor in 1977 and fled to France to escape American justice.
+                    <br><br>He continued to make films in Europe, some inspired by his own story, such as Tess (1979),
+                    adapted from his late wife's favorite novel, or The Pianist (2002), about a Jewish musician who escapes from the
+                    the Nazis in Warsaw. This film won him the Palme d'Or at Cannes and three Oscars.
+                    <br><br>He currently lives with his third wife Emmanuelle Seigner and their two children. He is still being prosecuted by the
+                    United States and was arrested in Switzerland in 2009, before being released in 2010.</p>
+                </div>
+            </article>
+            <article class="article">
+                <div class="section__article">
+                    <h2 class="article__title">Filmography</h2>
+                    <hr class="article__sep">
+                    <div class="carrousel" x-data="{hrefCourant:'#ecran-1',}">
+                        <!-- <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant" @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth"><</button>
+                        <button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant" @click="$refs.parent.scrollLeft += $refs.parent.clientWidth">></button> -->
+                        <div class="carrousel_parent-ecrans" x-ref="parent" @scroll.debounce.0ms.passive="
+                                    hrefCourant = '#'+
+                                                        [...$refs.parent.children]
+                                                        .find(e=>e.getBoundingClientRect().x>=0)
+                                                        .id">
+                                    <div id="ecran-1" class="carrousel_ecran">
+                                        <figure>
+                                            <img class="imgcar" src="../public/img/couteau.webp" alt="image ecran 1">
+                                            <figcaption class="carrousel_figcap" >"Le couteau dans l'eau" <strong>1962</strong></figcaption>
+                                        </figure>
+                                    </div>
+                                    <div id="ecran-2" class="carrousel_ecran">
+                                        <figure>
+                                            <img class="imgcar" src="../public/img/bal.webp" alt="image ecran 2">
+                                            <figcaption class="carrousel_figcap" >"Le bal des vampires" <strong>1967</strong></figcaption>
+                                        </figure>
+                                    </div>
+                                    <div id="ecran-3" class="carrousel_ecran">
+                                        <figure>
+                                            <img class="imgcar" src="../public/img/rose.webp" alt="image ecran 3">
+                                            <figcaption class="carrousel_figcap" >"Rosemary Baby" <strong>1968</strong></figcaption>
+                                        </figure>
+                                    </div>
+                                    <div id="ecran-4" class="carrousel_ecran">
+                                        <figure>
+                                            <img class="imgcar" src="../public/img/jack.webp" alt="image ecran 4">
+                                            <figcaption class="carrousel_figcap" >"Chinatown" <strong>1974</strong></figcaption>
+                                        </figure>
+                                    </div>
+                                    <div id="ecran-5" class="carrousel_ecran">
+                                        <figure>
+                                            <img class="imgcar" src="../public/img/LePianiste.webp" alt="image ecran 5">
+                                            <figcaption class="carrousel_figcap" >"Le Pianiste" <strong>2002</strong></figcaption>
+                                        </figure>
+                                    </div>
+                        </div>
+                    </div>
+
+                </div>
+                <p class="main__article-text">These are works in the same genre as Roman Polanski's The Pianist.</p>
+            </article>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__header">
+            <a class="footer__logo" href="#"><img class="logo__pia" src="../public/img/logo.webp" alt="logo site"></a>
+            <a class="footer__logo" href="https://butmmi.thomasjeu.fr/#/"><img class="logo__mmi"
+                    src="../public/img/mmi.webp" alt="logo mmi"></a>
+        </div>
+        <div>
+            <p class="footer__title">Concept</p>
+            <p class="footer__desc">The Pianist website is a retrospective of Roman Polanski's famous film. It
+                primary aim is to introduce
+                discover a true story that promotes strong values through a film, its director
+                as well as
+                and a number of related works.</p>
+            <hr class="footer__sep">
+        </div>
+        <div class="footer__container">
+            <ul class="footer__list">
+                <li class="footer__li">
+                    <p class="footer__title">Sections</p>
+                </li>
+                <li class="footer__li"><a class="footer__a" href="./réplique.html">Quote</a></li>
+                <li class="footer__li"><a class="footer__a" href="./films.html">Films</a></li>
+                <li class="footer__li"><a class="footer__a" href="./réalisateur.html">Director</a></li>
+                <li class="footer__li"><a class="footer__a" href="./musique.html">Music</a></li>
+                <li class="footer__li"><a class="footer__a" href="./livres.html">Books</a></li>
+            </ul>
+            <ul class="footer__list">
+                <li class="footer__li">
+                    <p class="footer__title">Informations</p>
+                </li>
+                <li class="footer__li"><a class="footer__a" href="./contact.html">Contact</a></li>
+                <li class="footer__li"><a class="footer__a" href="./about.html">About</a></li>
+                <li class="footer__li"><a class="footer__a" href="./projects.html">Other projects</a></li>
+            </ul>
+            <ul class="footer__list--reseaux">
+                <li class="footer__li">
+                    <p class="footer__title">Social</p>
+                </li>
+                <li class="footer__li--icone"><a class="footer__icone"
+                        href="https://www.facebook.com/pierre.gachod.1/about"><img src="../public/img/facebook.svg"
+                            alt="logo réseau"></a></li>
+                <li class="footer__li--icone"><a class="footer__icone"
+                        href="https://www.instagram.com/pierre_gchd_/?next=%2F"><img src="../public/img/insta.svg"
+                            alt="logo réseau"></a></li>
+                <li class="footer__li--icone"><a class="footer__icone" href="https://twitter.com/GachodPierre"><img
+                            src="../public/img/X.svg" alt="logo réseau"></a></li>
+            </ul>
+        </div>
+        <div>
+            <hr class="footer__sep">
+            <a class="footer__a" href="mailto:pierre.gachodpro@gmail.com">“project carried out as part of an educational
+                at the MMi departement in Montbéliard.
+                Montbéliard, to contact me click <strong>here</strong>“</a>
+        </div>
+    </footer>
+</body>
+
+</html>
