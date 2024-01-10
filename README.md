@@ -1,8 +1,8 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/OLLHpiQA)
 - NOM : Gachod
 - PRÉNOM : Pierre
-- URL du site :
-- URL FIGMA : 
+- URL du site : https://lepianiste.pierre-gachod.fr/
+- URL FIGMA : https://www.figma.com/file/o7Hnvjv7zby7yV2EJ6l9W8/projet-S1?type=design&node-id=149%3A411&mode=design&t=tZGjZSjxTBkCAoch-1
 
 # Structure de départ pour le projet individuel.
 
