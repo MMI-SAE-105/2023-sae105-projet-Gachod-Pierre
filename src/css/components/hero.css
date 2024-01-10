@@ -23,6 +23,7 @@
 
 .main__hero--desc {
     color: var(--gris6);
+    z-index: 1;
 }
 
 .main__hero--desc2 {
@@ -44,7 +45,7 @@
 }
 
 .main__hero {
-    z-index: -1;
+    z-index: 1;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -68,6 +69,7 @@
 .text__content {
     max-width: 100%;
     margin: var(--space3x);
+    z-index: 1;
 }
 
 .hero__title--sep {
@@ -82,4 +84,8 @@
     margin-top: 5px;
     margin-bottom: 10px;
     margin-right: 60px;
+}
+
+.hero__a {
+    color: var(--gris6);
 }
