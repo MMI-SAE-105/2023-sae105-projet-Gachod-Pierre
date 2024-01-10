@@ -75,12 +75,15 @@
                     </h1>
                 </div>
                 <img class="main__hero-imgfond" src="../public/img/fondpia.webp" alt="fond">
-                <a class="main__hero-scroll" href="#"><img src="../public/img/arrow.svg" alt="flèche"></a>
+                <a class="main__hero-scroll" href="#"
+                    @click.prevent="$refs['section'].scrollIntoView({ behavior: 'smooth', block: 'start' })">
+                    <img src="../public/img/arrow.svg" alt="flèche">
+                </a>
             </div>
         </section>
     
 
-        <section class="section">
+        <section class="section" x-ref="section">
             <div>
                 <p class="section__desc">Venez découvrir les différentes facettes de ce chef-d'œuvre cinématographique tournant autour de la réplique en passant
                 par différents aspects liés au film.

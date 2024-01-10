@@ -95,11 +95,11 @@
                     livres sur le même thème.</p>
                 </div>
                 <img class="main__hero-imgfond" src="../public/img/fondmu.webp" alt="fond">
-                <form class="read__but" action="#"><button class="section__btn-read">Lire</button></form>
+                <form @click.prevent="$refs['section'].scrollIntoView({ behavior: 'smooth', block: 'start' })" class="read__but" action="#"><button class="section__btn-read">Lire</button></form>
             </div>
         </section>
 
-        <section class="section">
+        <section class="section" x-ref="section">
             <article class="article">
                 <div class="section__article">
                     <h2 class="article__title">Une oeuvre littéraire</h2>

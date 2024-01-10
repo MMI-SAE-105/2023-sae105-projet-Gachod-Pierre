@@ -94,11 +94,11 @@
                     <p class="main__hero--desc">Une phrase simple et profonde qui résume le film : la survie grâce à la musique face à la barbarie nazie. Découvrez cette phrase lourde de valeur et de sens.</p>
                 </div>
                 <img class="main__hero-imgfond" src="../public/img/fondrep.webp" alt="fond">
-                <form class="read__but" action="#"><button class="section__btn-read">Lire</button></form>
+                <form @click.prevent="$refs['section'].scrollIntoView({ behavior: 'smooth', block: 'start' })" class="read__but" action="#"><button class="section__btn-read">Lire</button></form>
             </div>
         </section>
 
-        <section class="section">
+        <section class="section" x-ref="section">
             <article class="article">
                 <div class="section__article">
                     <h2 class="article__title">La réplique du film : “vous m’avez pris mon violon, vous m’avez pris mon âme”</h2>
