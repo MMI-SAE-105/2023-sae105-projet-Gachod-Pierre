@@ -44,3 +44,14 @@ margin: 60px 0;
     line-height: 150%;
     letter-spacing: 0%;
 }
+
+.article__signature {
+    font-family: Jost;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: var(--gris1);
+    text-align: right;
+}

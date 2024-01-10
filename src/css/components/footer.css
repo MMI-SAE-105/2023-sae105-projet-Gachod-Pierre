@@ -48,7 +48,7 @@ footer {
 .footer__a {
     font-family: Inter;
     font-size: 13px;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 170%;
     letter-spacing: 0%;
     color: var(--gris6);
