@@ -20,12 +20,27 @@ header {
     padding-bottom: 5px;
 }
 
+.header__nav--left {
+    display: flex;
+    align-items: center;
+}
+
+.header__nav--right {
+    display: flex;
+    align-items: center;
+}
+
 .header__logo {
-    padding-right: 90px;
+    margin-right: auto; /* Cela placera le logo tout à gauche */
+}
+
+.header__menu-btn {
+    margin-left: 20px; /* Ajustez cette valeur selon l'espace désiré */
 }
 
 .header__lang {
-    margin-top: 5px;
+    margin-top: 4px;
+    margin-left: 20px;
 }
 
 
@@ -44,6 +59,15 @@ header {
     line-height: 120%;
     letter-spacing: 0%;
     color: var(--gris6);
+}
+
+.menu__link--active {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: rgb(170, 170, 170);
 }
 
 .header__nav-desc {
@@ -67,10 +91,14 @@ header {
     margin-bottom: 20px;
 }
 
+.header__hr--active {
+    border-color: var(--dark-red);
+}
+
 .header__hr--end {
     margin-top: 10px;
     margin-bottom: 20px;
-    border-color: var(--dark-red);
+    border-color: var(--gold);
 }
 
 .header__nav-info {

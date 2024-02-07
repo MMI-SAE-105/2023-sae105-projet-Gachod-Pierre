@@ -14,17 +14,19 @@
         <nav id="mainNav" class="header__nav" 
         x-show="menuIsOpen" x-transition.scale.origin.top>
             <div class="header__nav--menu">
-                <a href="index.html" class="header__logo">
-                    <img src="../public/img/logo.webp" alt="pianiste logo" class="logo__pia"/>
-                </a>
-                
-                <a href="../en/index.html" class="header__lang">
-                    <img src="../public/img/FR.svg" alt="bouton langue" class="sigle__lang"/>
-                </a>
-                
-                <button aria-controls="mainNav" class="header__menu-btn" @click="menuIsOpen = ! menuIsOpen">
-                    <img src="../public/img/menu-open.svg" alt="Icone menu" class="header__menu-icon"/>
-                </button>
+                <div class="header__nav--left">
+                    <a href="index.html" class="header__logo">
+                        <img src="../public/img/logo.webp" alt="pianiste logo" class="logo__pia"/>
+                    </a>
+                </div>
+                <div class="header__nav--right">
+                    <a href="../en/index.html" class="header__lang">
+                        <img src="../public/img/FR.svg" alt="bouton langue" class="header__sigle"/>
+                    </a>
+                    <button aria-controls="mainNav" class="header__menu-btn" @click="menuIsOpen = ! menuIsOpen">
+                        <img src="../public/img/menu-open.svg" alt="Icone menu" class="header__menu-icon"/>
+                    </button>
+                </div>
             </div>
             
 
@@ -82,7 +84,6 @@
             </div>
         </section>
     
-
         <section class="section" x-ref="section">
             <div>
                 <p class="section__desc">Venez découvrir les différentes facettes de ce chef-d'œuvre cinématographique tournant autour de la réplique en passant
